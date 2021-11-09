@@ -1,0 +1,30 @@
+* {
+    
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0 auto;
+    background-image: url(../game_Css_dinner_win\ .png);
+    width: 100vw;
+    min-width: 300px;
+    background-repeat: no-repeat;
+}
+
+a{
+
+    color: rgb(236, 67, 67);
+    font-weight: 900;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+div{
+
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 1em;
+    margin: 0 auto;
+}

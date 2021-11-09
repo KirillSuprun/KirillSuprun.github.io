@@ -1,0 +1,27 @@
+
+.cointeiner{
+
+    width: 70vw;
+    min-width: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+p{
+
+    font-size: 1cm;
+    font-family: 'Finger Paint', cursive;
+
+
+
+
+}
+
+h1{
+
+    font-family: 'Rampart One', cursive;
+    color: green;
+    text-shadow: 3px 5px 5px red;
+    
+}

@@ -1,0 +1,65 @@
+
+body {
+
+    background: linear-gradient(125deg, rgb(54,81,217),
+    rgb(207,56,148));
+    
+    width:600px;
+
+    color:white;
+    text-align: justify;
+
+}     
+
+header {
+
+    text-shadow: -1px 0px 9px white;
+    text-align: center;
+
+}
+
+button {
+
+    border: 10px 2em;
+    padding: 6px 4em; 
+    box-shadow: 2px 2px 2px rgb(56, 55, 55);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}   
+
+.button1_left{
+
+background: rgb(86, 205, 241);
+
+
+}
+
+.button2_right{
+
+background: rgb(163, 85, 170);
+
+}   
+
+footer{
+
+    text-align: center;
+
+}
+
+
+.button_back_to_main{
+
+    text-align: center;
+    display: inline-block;
+    background: rgb(130, 207, 238);
+    color: rgb(229, 255, 0);
+    padding: 0.5em 6em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+    font-size: large;
+}

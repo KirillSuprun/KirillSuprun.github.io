@@ -1,0 +1,51 @@
+
+    /* Start Template Styles */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;  
+        padding-bottom: 8rem;          
+    }
+
+    h1 {
+        text-align: center;	
+        color: blue;
+        font-size: 4rem;	
+    }
+
+    img {
+        width: 100px; /* Image Width */
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px solid rgb(36, 197, 36);
+        box-shadow: 0px 0px 0.5rem gray;
+        border-radius: 0.5rem;
+        vertical-align: top;
+        transition: 0.8s;
+        background: white;
+        z-index: 1;
+        position: relative;
+    }
+
+    /* End Template Styles */
+
+    img:hover{
+        transform: scale(3);
+        z-index: 10;
+        
+    }
+        
+     

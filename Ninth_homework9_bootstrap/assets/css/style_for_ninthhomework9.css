@@ -1,0 +1,37 @@
+.container{
+    font-family: 'Kalam', cursive;
+
+}
+
+.shop{
+    font-family: 'Kalam', cursive;
+
+}
+
+
+#tiger{
+    transition: 0.5s;
+
+    
+}
+
+#tiger:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+    background-color: rgb(233, 230, 230);
+    z-index: 10;
+}
+
+a{
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: rgba(233, 233, 233, 0.363);
+    transition: 0.5s;
+    transform: rotate(-3deg);
+}
+
+.card{
+    min-width: 300px;
+}

@@ -1,0 +1,111 @@
+body {
+    
+    margin: 0px auto;
+    width: 70vw;
+    
+    
+  
+    
+    
+  }
+  
+  * {
+    
+    box-sizing: border-box;
+  }
+
+  header{
+
+    background-image: linear-gradient(to bottom, #f9aee6, #f3a0e5, #ec93e5, #e386e6, #d979e8, #d46eea, #ce64ec, #c759ee, #c54cf0, #c43df2, #c229f4, #c000f6);
+    min-height: 250px;
+    border-radius: 0 0 25px 25px;
+    
+  }
+
+  .go_home{
+
+    color: rgba(112, 16, 112, 0.116);
+    font-size: 50px;
+
+  }
+
+/* 
+  .gray_back{
+
+    margin-top: -100px;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184);
+
+  } */
+
+
+
+  h1{
+    
+    /* font-family: 'Bangers', cursive;   */
+    /* Шрифт для заголовка 1  */
+    font-family: 'Permanent Marker', cursive;
+    /* шрифт для заголовка 2 */
+    text-align: center;
+    font-size: 70px;
+    margin-top: -20px;
+    /* text-shadow: 1px 1px 5px gray; */
+    
+  }
+
+  nav {
+
+    text-align: center;
+    margin-top: -200px;
+
+  }
+
+  img{
+
+    border-radius: 200%;
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgb(21, 224, 21);
+
+
+  }
+
+  main{
+
+    padding: 0px 40px 0 40px;
+    text-align: justify;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+
+  }
+
+.icons{
+
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 0px 1px 2px black;
+
+}
+
+footer{
+
+    text-align: center;
+
+}
+
+
+button{
+
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 200px ;
+    border-radius: 15px;
+    /* margin: auto; */
+    color: whitesmoke;
+    background-image: linear-gradient(to bottom, #f9aee6, #f3a0e5, #ec93e5, #e386e6, #d979e8, #d46eea, #ce64ec, #c759ee, #c54cf0, #c43df2, #c229f4, #c000f6);
+
+    font-size: 45px;
+
+
+}

@@ -1,0 +1,32 @@
+    
+    /* Start Template Styles */
+   
+    body {
+        margin: 0;
+    }
+
+    div.box {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.box > img{
+        width: 50%;
+        max-width: 500px;
+        margin: 30px;
+        border: 5px solid #ddd;
+        padding: 30px;
+        border-radius: 20px;
+        filter: grayscale(30%);
+        transition: 0.5s;
+    }
+
+    /* End Template Styles */
+
+    div.box > img:hover{
+        filter: grayscale(0%);
+        border-color: rgb(245, 68, 171);
+    }
+

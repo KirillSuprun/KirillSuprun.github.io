@@ -1,0 +1,88 @@
+
+body {
+
+    margin: 0px;
+    ;
+}
+
+* {
+    
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+    
+}
+
+.font_ahref{
+
+font-size: 20px;
+
+}
+
+h1{
+
+    padding: 20px 0px 20px 0px;
+    font-size: 38px;
+}
+
+.first_href{
+
+    font-style: oblique;
+    font-weight: bold;
+}
+
+
+img{
+
+    /* size: auto; */
+    max-height: 600px;
+    min-height: 100px;
+    width: 100%
+    
+
+    }
+
+header{
+
+background-image: url(/Fourth_homework/assets/pan_for_header_top.jpg);
+background-size: 100vw 100%;
+color: rgb(255, 255, 255);
+ /* text-shadow: 0px 0px 1px rgb(255, 255, 255) ;  */
+padding: 20px 0px 30px 0px;
+box-shadow: 0px 5px 5px rgba(31, 73, 92, 0.349);
+
+}
+
+
+
+ /* main{
+
+    
+    text-align: justify;
+    margin: 50px auto;
+    border-width: 50%;
+    width: 60vw;
+} */
+
+
+.Cointeiner{
+
+    
+    width: 60vw;
+    margin: 0px auto;
+    border: 60vw;
+    
+    text-align: justify;
+    max-width: 1200px;
+    min-width: 300px;
+
+}
+
+.imgtext{
+
+    
+    
+}

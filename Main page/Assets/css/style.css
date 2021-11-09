@@ -1,0 +1,109 @@
+
+body {
+  margin: 0px;
+ 
+
+
+  background-image: radial-gradient(circle, #85f8e9, #63ecf3, #49defb, #47ceff, #5cbdff, #6ebcfc, #7dbaf9, #8ab9f6, #97c7f7, #a9d5f7, #bee1f8, #d5edf9);
+  text-align:center;
+  
+}
+
+* {
+  
+  box-sizing: border-box;
+}
+
+
+@font-face {
+
+  font-family: 'RampartOne' ;
+  src: url(../fonts/RampartOne-Regular.ttf);
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+h1{
+
+  font-family: 'RampartOne';
+  font-size: 1.5cm;
+  text-shadow: 0px 0px 1.5px rgb(0, 0, 0);
+    color:rgb(0, 0, 0); 
+  margin-bottom: 0px;
+}
+
+  nav{
+
+    font-family: 'RampartOne';
+    padding-top: -5px;
+    margin: 0;
+    text-shadow: 0px 0px 1.5px rgb(0, 0, 0);
+    color:rgb(0, 0, 0)
+    /* text-decoration: underline; */
+
+  }
+
+ h3{
+
+    /* font-family: 'RampartOne'; */
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgb(17, 117, 8);
+    color:rgb(102, 252, 65); 
+    font-style: italic;
+    padding: 0px 5px;
+    
+
+ }
+
+  i{
+
+    font-size: 20px;
+
+  }
+
+img{
+
+    border-radius: 15px;
+    
+}
+
+
+aside{
+    width: 48vw; 
+    max-width: 900px;
+    min-width: 400px;
+    float: left;
+
+}
+
+a{
+  text-decoration: none;
+  font-style: initial;
+  text-decoration: underline;
+  text-decoration-color: rgb(102, 252, 65);
+}
+
+footer{
+  width: 30vw;
+  max-width: 1500px;
+  min-width: 300px;
+  margin: 3000px auto 0px;
+  margin-top: 3100px;
+  text-align: center;
+  /* padding: px 0px 0px 0px; */
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+  
+  
+}
+
+.down_link{
+
+text-decoration: none;
+color: rgb(109, 8, 84);
+
+}

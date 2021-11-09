@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.container {
+    min-width: 460px;
+    width: 70vw;
+    max-width: 960px;
+    margin: 0 auto;
+    /* background-color: cadetblue; */
+ }
+
+header, main, footer {
+    background: yellow; 
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+/* ********************************* */
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main{
+    flex-grow: 1;
+
+}
+
+header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+
+}
+
+a:first-child{
+    font-size: 40px;
+    font-weight: bold;
+    /* flex-grow: 1; */
+    margin-right: auto;
+}
+
+footer{
+    font-size: 25px;
+    text-align: center;
+}
+
+.component{
+    background: white;
+    text-align: justify;
+    border: 3px solid blue;
+
+}
+
+.cell{
+    border: 2px dashed red;
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+/* КОЛОНКИ */
+p{
+    background: rgb(236, 124, 89);
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+
+}
+

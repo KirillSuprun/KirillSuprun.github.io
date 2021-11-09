@@ -1,0 +1,193 @@
+
+body {
+
+    margin: 0;
+    
+    
+    color: white;
+
+    background-image: url(/fifth_homework/assets/road4.jpg);
+    background-size: 80vw 100%;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    border-left: 10vw solid yellow;
+    border-right: 10vw solid purple;
+    
+    text-align: justify;
+    
+    /* padding: 10vh 20px 50px 20px; */
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+* {
+    
+    box-sizing: border-box;
+}
+
+a{
+
+    color: rgba(0, 0, 0, 0.151);
+    font-weight: 900;
+    font-size: 3rem;
+
+}
+
+
+header{
+
+    padding: 10rem 5rem 0 5rem;
+    color: rgb(230, 89, 65);
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 900;
+    font-size: 5.8rem;
+    text-align: center;
+    line-height: 1.1;
+    font-kerning: normal;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+}
+
+nav{
+
+    
+    font-family: 'Carter One', cursive;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 10rem;
+    padding: 0 5rem 0 5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black; /* для выделения текста на фоне */
+ 
+}
+
+main{
+
+    padding: 0 20px 50px 20px;
+
+}
+
+.dreams{
+
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    /* line-height: 1; */
+    margin-top: 8rem;
+    padding: 0 5rem 0 5rem;
+    /* letter-spacing: -3px; */
+
+}
+
+.secondplace{
+
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 8rem;
+    padding: 0 5rem 0 5rem;
+}
+
+
+.victory{
+
+    font-family: 'Mali', cursive;
+    font-weight: 700;
+    color: rgb(240, 108, 47);
+    text-shadow: 1px 0px 5px rgb(238, 105, 44);
+
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 8rem;
+    padding: 0 5rem 0 5rem;
+
+}
+
+.client{
+
+    font-family: 'Cookie', cursive;
+    font-weight: 400;
+
+    font-size: 8rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 8rem;
+    padding: 0 5rem 0 5rem;
+
+}
+
+.white_backg{
+
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 3rem;
+    padding: 1px 0 1px 0px;
+    
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+    color: black;
+    background: white;
+    transform:rotate(-8deg);
+    border-radius: 10px;
+}
+
+footer{
+
+    font-family: 'DM Mono', monospace;
+    font-style: normal;
+    font-weight: 300;
+    
+    font-size: 2.5rem;
+    text-align: right;
+    line-height: 1;
+    margin-top: 8rem;
+    padding: 0 5rem 7rem 5rem;
+    text-shadow: 1px 1px 1px black; /* для выделения текста на фоне */
+    
+}
+
+.Enzo{
+
+    font-family: 'DM Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    
+    color: red;
+    text-shadow: 1px 0px 5px red;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Cairo', sans-serif;
+font-family: 'Carter One', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'DM Mono', monospace;
+font-family: 'Mali', cursive;
+font-family: 'Oswald', sans-serif; */
