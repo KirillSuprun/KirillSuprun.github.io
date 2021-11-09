@@ -22,9 +22,11 @@ div.Full_model{
     background-color: brown;
     height: 97%;
     width: 25%;
+    min-width: 150px;
+    min-height: 400px;
     padding: 1rem;
     border: 1px solid black;
-    margin: 1rem;
+    margin: 1rem auto 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +34,8 @@ div.Full_model{
 }
 
 img{
-    width:15rem;
-    height: 15rem; 
+    width: 40%;
+    height: 20%; 
     border-radius: 100%;   
 
 }
@@ -45,16 +47,17 @@ h1{
 }
 
 h2{
-    color: darkgrey;
-
+    color: rgba(169, 169, 169, 0.685);
+    margin-top: -5px;
 }
 
 button{
     background-color: rgb(243, 123, 11);
     padding: 1rem 3rem 1rem 3rem;
     font-family: 'Sansita Swashed', cursive;
-
-
+    font-size: large;
+    font-weight: 700;
+    border-radius: 15px;
 
 
 }
