@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+
+}
+
+
+div.Full_model{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    flex-grow: 1;
+
+}
+
+.left_height_block{
+    background-color: brown;
+    height: 97%;
+    width: 25%;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.right_block_all{
+    display: flex;
+    background-color: chartreuse;
+    height: 100%;
+    width: 75%;
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    height: 46%;
+    min.width: ;
+    flex-grow: 1;
+    margin: 1rem 1rem 0.5rem 1rem;
+    background-color: yellow;
+}
+
+.box_bottom4{
+    height: 46%;
+    width: 100%;
+    margin: 0.5rem 1rem 1rem 1rem;
+    background-color: purple;
+    
+}
