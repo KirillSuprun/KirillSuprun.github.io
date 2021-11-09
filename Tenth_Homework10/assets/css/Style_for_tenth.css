@@ -77,6 +77,23 @@ button{
     flex-grow: 1;
     margin: 1rem 1rem 0.5rem 1rem;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number{
+    Color: rgb(243, 123, 11);
+    font-size: 3rem;
+
+
+}
+
+.discription{
+    font-size: 1.5rem;
+    color: rgba(169, 169, 169, 0.685);
 }
 
 .box_bottom4{
@@ -84,5 +101,14 @@ button{
     width: 100%;
     margin: 0.5rem 1rem 1rem 1rem;
     background-color: purple;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: justify;
     
 }
