@@ -5,7 +5,7 @@
 
 body{
     margin: 0;
-
+    font-family: 'Sansita Swashed', cursive;
 }
 
 
@@ -25,6 +25,38 @@ div.Full_model{
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width:15rem;
+    height: 15rem; 
+    border-radius: 100%;   
+
+}
+
+h1{
+    text-align: center;
+    
+
+}
+
+h2{
+    color: darkgrey;
+
+}
+
+button{
+    background-color: rgb(243, 123, 11);
+    padding: 1rem 3rem 1rem 3rem;
+    font-family: 'Sansita Swashed', cursive;
+
+
+
+
 }
 
 .right_block_all{
@@ -37,15 +69,15 @@ div.Full_model{
 }
 
 .box{
-    height: 46%;
-    min.width: ;
+    height: 47%;
+    min.width: 300px;
     flex-grow: 1;
     margin: 1rem 1rem 0.5rem 1rem;
     background-color: yellow;
 }
 
 .box_bottom4{
-    height: 46%;
+    height: 48%;
     width: 100%;
     margin: 0.5rem 1rem 1rem 1rem;
     background-color: purple;
