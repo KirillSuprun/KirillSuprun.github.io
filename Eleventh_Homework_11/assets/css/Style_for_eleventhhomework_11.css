@@ -2,3 +2,90 @@ body{
     font-family: 'Lexend Deca', sans-serif;
 
 }
+
+.navphoto{
+    width: 100%;
+    height: 40rem;
+    min-height:300px;
+    
+
+}
+
+.topmenu{
+    padding: 1rem 0.5rem
+
+}
+
+a{
+    /* padding: 0 0.7rem 0 0.7rem; */
+    
+}
+
+.boxexnav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    grid-template-rows: minmax(1rem, 17rem);
+}
+
+.navbox{
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+#navbox1{
+    background-image: url(../navbox1.jpg);
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+#navbox2{
+    background-image: url(../navbox2.jpg);
+    justify-content: flex-start;
+}
+
+#navbox3{
+    background-image: url(../navbox3.jpg);
+    color: white;
+}
+
+
+.Navboxnames{
+    color: rgba(0, 0, 0, 0.925);  
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    margin-left: 0.5rem;
+}
+
+.navboxdiscription{
+    margin: -1rem 0 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+
+}
+
+.card{
+    background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe);
+    border-radius: 25px;
+}
+
+.card-img-top{
+    width: 100%;
+    border-radius: 25px;
+
+}
+
