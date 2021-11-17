@@ -232,7 +232,7 @@ body{
 .car1{
     animation-name: way1;
     animation-duration: 6s;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -591,9 +591,22 @@ body{
 .car2{
     animation-name: way2;
     animation-duration: 14s;
-    animation-delay: 2.2s;
+    animation-delay: 4.2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }
 
+a{
+    margin: 2rem;
+    color: rgb(146, 182, 17);
+    opacity: 0.3;
+    transition: 0.5s;
+    font-size: 3rem;
+}
+
+a:hover{
+    transition: 0.3s;
+    opacity: 1;
+    transform: scaleX(1.2);
+}
