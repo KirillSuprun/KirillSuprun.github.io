@@ -14,6 +14,12 @@ body {
   box-sizing: border-box;
 }
 
+.cointainer{
+  width: 95%;
+  margin: 0 auto;
+}
+
+
 
 @font-face {
 
@@ -28,13 +34,13 @@ body {
 h1{
 
   font-family: 'RampartOne';
-  font-size: 1.5cm;
+  font-size: 4rem;
   text-shadow: 0px 0px 1.5px rgb(0, 0, 0);
   color:rgb(0, 0, 0); 
   margin-bottom: 0px;
 }
 
-  nav{
+nav{
 
     font-family: 'RampartOne';
     padding-top: -5px;
@@ -43,9 +49,9 @@ h1{
     color:rgb(0, 0, 0)
     /* text-decoration: underline; */
 
-  }
+}
 
- h3{
+h3{
 
     /* font-family: 'RampartOne'; */
     font-size: 30px;
@@ -56,28 +62,36 @@ h1{
     padding: 0px 5px;
     
 
- }
+}
 
-  i{
+i{
 
     font-size: 20px;
 
-  }
+}
 
 img{
 
     border-radius: 15px;
+    width: 300px;
+    height: 500px;
     
 }
 
 
+
+
 aside{
-    width: 48vw; 
-    max-width: 900px;
-    min-width: 400px;
-    float: left;
+    /* width: 48vw;  */
+    /* max-width: 900px;
+    min-width: 400px; */
+    /* white-space: nowrap; */
 
 }
+
+
+
+
 
 a{
   text-decoration: none;
@@ -87,11 +101,8 @@ a{
 }
 
 footer{
-  width: 30vw;
-  max-width: 1500px;
-  min-width: 300px;
-  margin: 3000px auto 0px;
-  margin-top: 3100px;
+  /* max-width: 1500px; */
+  /* min-width: 300px; */
   text-align: center;
   /* padding: px 0px 0px 0px; */
   font-size: 20px;
@@ -107,10 +118,63 @@ text-decoration: none;
 color: rgb(109, 8, 84);
 }
 
+.aside_boxes{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+}
+
+.aside_boxes{
+  grid-area: aside_boxes;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.grid_all{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr 5fr 1fr; */
+  grid-template-areas: "header"
+                       "nav"
+                       "aside_boxes"
+                       "footer"; 
+}
+
+@media (min-width: 500px) {
+  img{
+
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    
+}
+
+}
 
 
 
-/* .blank{
-  opacity: 1;
+@media (min-width: 992px) {
+  .cointainer{
+    width: 70vw;
+    margin: 0 auto;
+  }
 
-} */
+  .aside_boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto auto auto; */
+  }
+
+
+
+}
