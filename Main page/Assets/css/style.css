@@ -2,9 +2,8 @@
 body {
   margin: 0px;
  
-
-
-  background-image: radial-gradient(circle, #85f8e9, #63ecf3, #49defb, #47ceff, #5cbdff, #6ebcfc, #7dbaf9, #8ab9f6, #97c7f7, #a9d5f7, #bee1f8, #d5edf9);
+  /* background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+  background-image: linear-gradient(to left top, #ffffff, #dddddd, #bcbcbc, #9d9d9d, #7e7e7e);
   text-align:center;
   
 }
@@ -33,33 +32,34 @@ body {
 
 h1{
 
-  font-family: 'RampartOne';
+  font-family: 'Righteous', cursive;
   font-size: 4rem;
-  text-shadow: 0px 0px 1.5px rgb(0, 0, 0);
+  /* text-shadow: 0px 0px 5px rgb(0, 0, 0); */
   color:rgb(0, 0, 0); 
   margin-bottom: 0px;
+  letter-spacing: 3px;
 }
 
 nav{
 
-    font-family: 'RampartOne';
-    padding-top: -5px;
-    margin: 0;
-    text-shadow: 0px 0px 1.5px rgb(0, 0, 0);
-    color:rgb(0, 0, 0)
-    /* text-decoration: underline; */
+  font-family: 'Righteous', cursive;
+  padding-top: -5px;
+  margin: 0;
+  /* text-shadow: 0px 0px 1.5px rgb(0, 0, 0); */
+  color:rgb(0, 0, 0)
+  /* text-decoration: underline; */
 
 }
 
 h3{
-
-    /* font-family: 'RampartOne'; */
-    font-size: 30px;
-    font-weight: 700;
-    text-shadow: 2px 2px 2px rgb(17, 117, 8);
-    color:rgb(102, 252, 65); 
-    font-style: italic;
-    padding: 0px 5px;
+  font-family: 'Righteous', cursive;
+  /* font-family: 'RampartOne'; */
+  font-size: 30px;
+  font-weight: 700;
+  /* text-shadow: 0px 0px 1.5px rgb(0, 0, 0); */
+  color:rgb(17, 17, 17); 
+  font-style: italic;
+  padding: 0px 5px;
     
 
 }
@@ -71,7 +71,7 @@ i{
 }
 
 img{
-
+    margin-top: 10px;
     border-radius: 15px;
     width: 300px;
     height: 500px;
@@ -96,8 +96,13 @@ aside{
 a{
   text-decoration: none;
   font-style: initial;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: rgb(102, 252, 65);
+}
+
+.link_aside:hover{
+  text-decoration: underline;
+  color:rgb(0, 0, 0); 
 }
 
 footer{
@@ -108,14 +113,20 @@ footer{
   font-size: 20px;
   font-weight: bold;
   color:rgb(0, 0, 0);
-  
+  margin-top: 50px;
   
 }
 
 .down_link{
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+  text-shadow: 0px 0px 0.5px black;
+}
 
-text-decoration: none;
-color: rgb(109, 8, 84);
+.down_link:hover{
+  text-decoration: underline;
+
 }
 
 .aside_boxes{
@@ -156,8 +167,11 @@ footer{
     border-radius: 15px;
     width: 400px;
     height: 600px;
-    
-}
+  }
+  .down_link{
+    font-size: 1.5rem;
+    }
+
 
 }
 
@@ -175,6 +189,11 @@ footer{
     /* grid-template-rows: auto auto auto auto; */
   }
 
+  H3{
+    font-size: 40px;
+    
+    
+  }
 
 
 }
