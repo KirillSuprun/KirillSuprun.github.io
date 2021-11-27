@@ -51,22 +51,24 @@
             <form class="row g-3">
                 
                 <Div class="tel">
-                    Ваш Телефон*
+                    Ваш Телефон
 
                 </Div>
 
                 <div class="">
                     <input class="phone" 
-                        type="text"
                         required
-                        pattern="^(\+38[0-9]{10}|\+38\([0-9]{3}\)[0-9]{7})$ "    
-                    
+                        pattern="^(\+38[0-9]{10}|\+38\([0-9]{3}\)[0-9]{7}|\+38\([0-9]{3}\)[0-9]{3}\-[0-9]{2}\-[0-9]{2})$" 
+                        type="text"
+                        class="form-control"    
                         id="Phone" 
                         placeholder="* Это поле обязательно к заполнению"
                         >
+
                         <small class="form-text text-muted">
                             Пример: +380677777777, +38(067)5557788 или +38(067)456-67-88
                         </small>
+
                         <small class="form-text text-success valid-label">
                             Поле заполнено верно.
                         </small>
@@ -74,8 +76,8 @@
                         <small class="form-text text-danger invalid-label">
                             Поле заполнено не верно
                         </small>
-
-                        <!-- ^\+38\([0-9]{3}\)[0-9]{7}$ -->
+                        
+                        
 
                 </div>
 
