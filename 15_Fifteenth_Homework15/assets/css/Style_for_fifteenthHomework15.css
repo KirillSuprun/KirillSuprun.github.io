@@ -30,6 +30,12 @@ main{
     
 }
 
+.phone{
+    width: 18.5rem !important;
+    
+
+}
+
 .tel{
     font-weight: 400;
     font-size: 1.5rem;
@@ -91,8 +97,3 @@ footer{
 
 }
 
-.phone{
-    width: 18.5rem !important;
-    
-
-}
