@@ -16,3 +16,9 @@ a:hover{
     text-decoration: underline !important;
 
 }
+
+main{
+    display: flex;
+    flex-grow: 1 !important;
+
+}
