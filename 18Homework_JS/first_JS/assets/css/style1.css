@@ -1,0 +1,14 @@
+a{
+    margin: 2rem;
+    color: rgb(199, 3, 3);
+    opacity: 0.3;
+    transition: 0.5s;
+    font-size: 3rem !important;
+    text-decoration: none !important;
+}
+
+a:hover{
+    transition: 0.3s;
+    opacity: 1;
+    transform: scaleX(1.2);
+}
