@@ -35,7 +35,9 @@
     let prime_numbers = true;
     // let x = 1;
 
-    for(let x = 0; x < number; x++) {
+    for(let x = 3; x < number; x++) {
+
+        prime_numbers = true;
 
          for(let j = 2;  j < x; j++) {
             // console.log(`x = ${x}, j = ${j}`);
@@ -43,32 +45,24 @@
             // console.log(`${x} % ${j}`);
             // console.log(`Operation = ${operation}`);
 
-            if(operation !== 0) {
+            if(operation == 0) {
                 // console.log(`${operation}`);
                 prime_numbers = false;
                 // alert(`Число ${x} - не простое`)
-                // break; 
+                break; 
             }
-            else {
-                // show_numbers = show_numbers + `, ${x}`;
-                
-                // continue;
-            }
-
-            console.log(` x = ${x}`);
+           
 
         }
 
         if(prime_numbers) {
-            show_numbers = show_numbers + `, ${x}`;
-        } else {
-            continue;
-        }
+            console.log(x);
+        } 
         
     }
 
 
-    alert(`Простые числа от 1 до 1000: ${show_numbers}`);
+    //alert(`Простые числа от 1 до 1000: ${show_numbers}`);
 
 
 
