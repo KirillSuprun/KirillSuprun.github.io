@@ -3,7 +3,10 @@ div.cointainer{
 }
 
 body{
+<<<<<<< HEAD
     
+=======
+>>>>>>> 860cfe890f03af08bde5a886f5a8fe08be43c933
     background-image: linear-gradient(to top, #890d6f, #9e2f7d, #b4488c, #c8619c, #dd79ac, #e784b0, #f18fb4, #fb9ab9, #fc9ab2, #fd9bab, #fc9da4, #fb9e9e);
     min-height: 100vh;
 }
@@ -26,7 +29,10 @@ a:hover{
 main{
     display: flex;
     flex-grow: 1 !important;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 860cfe890f03af08bde5a886f5a8fe08be43c933
 }
 
 i{
