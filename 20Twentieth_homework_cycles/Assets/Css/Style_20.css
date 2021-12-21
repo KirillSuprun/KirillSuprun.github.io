@@ -3,7 +3,6 @@ div.cointainer{
 }
 
 body{
-    /* background-image: linear-gradient(to right top, #dc7b12, #e07913, #e37614, #e77415, #eb7117, #ed6c19, #ee661c, #f0601f, #f05623, #f04a27, #ef3e2b, #ee2f2f); */
     background-image: linear-gradient(to top, #890d6f, #9e2f7d, #b4488c, #c8619c, #dd79ac, #e784b0, #f18fb4, #fb9ab9, #fc9ab2, #fd9bab, #fc9da4, #fb9e9e);
     min-height: 100vh;
 }
@@ -26,9 +25,6 @@ a:hover{
 main{
     display: flex;
     flex-grow: 1 !important;
-    /* align-items: center !important;
-    justify-content: center !important;
-    margin: 20%; */
 }
 
 i{
