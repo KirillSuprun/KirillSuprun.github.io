@@ -31,9 +31,9 @@
     // }
 
     let number = 1000;
-    let show_numbers;
+    let show_numbers = [1, ]
     let prime_numbers = true;
-    // let x = 1;
+    
 
     for(let x = 3; x < number; x++) {
 
@@ -56,13 +56,16 @@
         }
 
         if(prime_numbers) {
-            console.log(x);
+            console.log(x)
+            show_numbers.push(x);
         } 
         
     }
 
+    alert(` Простые числа от 1 до 1000: ${show_numbers}`);
 
-    //alert(`Простые числа от 1 до 1000: ${show_numbers}`);
+
+    
 
 
 
