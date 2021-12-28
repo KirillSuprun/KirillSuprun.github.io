@@ -1,35 +1,8 @@
 
-// let secret = Math.random() * 100 ;
-// secret = Math.floor(secret) + 1;
-// console.log(`${secret}`);
-
-// let isFail = true;
-
-// for(let i = 1; i <= 10; i++) {
-
-// let variant = +prompt(`Ваш вариант (${i}/10)`);
-
-// if(secret == variant) {
-//     alert('Yes! you win');
-//     isFail = false;
-//     break;
-
-// } else if(secret > variant) {
-//     alert("My number Bigger");
-// } else {
-//     alert("My number Smaller");
-// }
-
-// }
-
-// if(isFail){
-// alert(`GAME OVER! Secret number is ${secret}`);
-// }
 
 
     let secret = Math.random() * 100; 
     secret = Math.floor(secret) + 1;
-    console.log(`${secret}`);
 
     let isFail = true;
 
@@ -39,22 +12,42 @@
 
         let possibleAnswer = version.value;
 
-        live.innerHTML = `${lives}`;
+        if(lives < 1){
+            endGame.classList.add(`animate__animated`);
+            endGame.classList.add(`animate__flash`);
+            endGame.innerHTML = `Проигрыш! У Вас закончились попытки!`;
+            endGame.style.color = `red`;
+
+            return
+        }
+
+        else{
 
             if(secret == possibleAnswer) {
-                // alert('Yes! you win');
+               
+                userVersion.innerHTML = `- ${possibleAnswer}.`;
+                endGame.classList.add(`animate__heartBeat`);
+                endGame.classList.add(`animate__heartBeat`);
+                endGame.innerHTML = `Победа! Вы угадали загаданное число!`;
+                endGame.style.color = `green`;
 
-
-                isFail = false;
+                gameBut.classList.add(`invisible`);
+                
+                return
+                
             
             } else if(secret > possibleAnswer) {
-                alert("My number Bigger");
+                
                 lives--;
                 live.innerHTML = `${lives}`;
+                userVersion.innerHTML = `- ${possibleAnswer}. Загаданное число больше`;
             } else {
-                alert("My number Smaller");
+                
                 lives--;
                 live.innerHTML = `${lives}`;
+                userVersion.innerHTML = `- ${possibleAnswer}. Загаданное число меньше`;
             }
         }
+
+    }
 
