@@ -15,7 +15,7 @@
         if(lives < 1){
             endGame.classList.add(`animate__animated`);
             endGame.classList.add(`animate__flash`);
-            endGame.innerHTML = `Проигрыш! У Вас закончились попытки!`;
+            endGame.innerHTML = `Проигрыш! У Вас закончились попытки! Мое загаданое число - ${secret}`;
             endGame.style.color = `red`;
 
             return
