@@ -39,7 +39,7 @@ if(sumAmountDeduction <= 0){
 
 
 console.log(`Федеральный подоходный налог - ${federalIncomeTax} USD`);
-
+alert(`При годовом доходе ${sumIncome}, Вам необходимо уплатить - ${federalIncomeTax} USD федерального подоходного налога`);
 
 
 
