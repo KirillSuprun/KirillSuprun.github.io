@@ -1,0 +1,39 @@
+div.cointainer{
+    min-height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(to right bottom, #f4ff00, #ebf948, #e3f369, #dcec84, #d7e59b, #d1e39e, #cae1a2, #c5dfa5, #b6e39a, #a1e893, #85ed8f, #5bf28f);
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none !important;
+    color: #f1db15 !important;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);    
+}
+
+a:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.2);
+    text-decoration: underline !important;
+
+}
+
+main{
+    display: flex;
+    flex-grow: 1 !important;
+}
+
+i{
+    transition: 0.3s;
+
+}
+
+i:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+    text-decoration: underline !important;
+}
