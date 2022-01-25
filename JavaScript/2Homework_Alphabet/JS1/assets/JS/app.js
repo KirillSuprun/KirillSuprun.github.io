@@ -27,6 +27,7 @@ console.log(`Words`, arrWords);
 
 
 let result = [];
+
 for (let i = 0; i < arrAbb.length; i++){
 
     for (let j = 0; j < arrLetter.length; j++){
