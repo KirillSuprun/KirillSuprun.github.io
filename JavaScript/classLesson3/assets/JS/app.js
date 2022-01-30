@@ -151,19 +151,66 @@
     // console.log(globalThis);
     // globalThis.alert('Hello');
 
-    function action(){
-        console.log(this);
-    }
+    // function action(){
+    //     console.log(this);
+    // }
 
 
 
 // 55555555555555555555555555555555555555555555555555555
 
 // 666666666666666666666666666666666666666666666666666666
+                // Метод ЛУНА
+
+    // let  card = '2221001390173620';
+
+    // card = card.split('').reverse().map(i => +i);
+    // console.log(card);
+
+
+    // let sum = 0;
+
+    // for(let i = 0; i < card.length; i++){
+        
+    //     if(i % 2 == 0){
+    //         sum = sum + card[i];
+    //     } else {
+    //         let double = card[i] * 2;
+    //         sum = sum + (double > 9 ? double - 9 : double);
+    //     } 
+    // }   
+    
+    // console.log(sum);
+
+    // let isCorrect = sum % 10 == 0;
+    
+    // console.log(`Is Correct:`, isCorrect);
+
 
 // 6666666666666666666666666666666666666666666666666666666
 
 // 7777777777777777777777777777777777777777777777777777777
+
+    // TDD - Test Driven Development
+
+    function sum(a, b) {
+        return a + b;
+    }
+
+    function mul(a, b){
+        return a * b;
+    }
+
+    export {sum, mul};
+
+    console.log( sum(2, 3) );
+
+
+    console.assert(sum(2,3) === 5, /* Если условие выполняеться, то больше ничего не показывается. Если условие не выполняеться, то пишеться всё после запятой как ошибка в КОНСОЛЕ БРАУЗЕРА */ `ALARM!!! "sum(2, 3) !== 5" is FAIL!` )
+
+    // if(sum(2,3) !== 5){
+    //     console.log(`ALARM!!! "sum(2, 3) !== 5" is FAIL!`)
+    // }
 
 // 77777777777777777777777777777777777777777777777777777777
 
