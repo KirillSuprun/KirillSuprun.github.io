@@ -162,10 +162,10 @@
 // 666666666666666666666666666666666666666666666666666666
                 // Метод ЛУНА
 
-    // let  card = '2221001390173620';
+    let  card = '2221001390173620';
 
-    // card = card.split('').reverse().map(i => +i);
-    // console.log(card);
+    card = card.split('').reverse().map(i => +i);
+    console.log(card);
 
 
     // let sum = 0;
@@ -193,20 +193,20 @@
 
     // TDD - Test Driven Development
 
-    function sum(a, b) {
-        return a + b;
-    }
+    // function sum(a, b) {
+    //     return a + b;
+    // }
 
-    function mul(a, b){
-        return a * b;
-    }
+    // function mul(a, b){
+    //     return a * b;
+    // }
 
-    export {sum, mul};
+    // export {sum, mul};
 
-    console.log( sum(2, 3) );
+    // console.log( sum(2, 3) );
 
 
-    console.assert(sum(2,3) === 5, /* Если условие выполняеться, то больше ничего не показывается. Если условие не выполняеться, то пишеться всё после запятой как ошибка в КОНСОЛЕ БРАУЗЕРА */ `ALARM!!! "sum(2, 3) !== 5" is FAIL!` )
+    // console.assert(sum(2,3) === 5, /* Если условие выполняеться, то больше ничего не показывается. Если условие не выполняеться, то пишеться всё после запятой как ошибка в КОНСОЛЕ БРАУЗЕРА */ `ALARM!!! "sum(2, 3) !== 5" is FAIL!` )
 
     // if(sum(2,3) !== 5){
     //     console.log(`ALARM!!! "sum(2, 3) !== 5" is FAIL!`)
