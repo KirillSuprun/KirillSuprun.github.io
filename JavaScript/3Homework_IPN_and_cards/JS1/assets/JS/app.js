@@ -24,7 +24,7 @@
 
     let answer = {};    
 
-    console.dir(Date);
+    // console.dir(Date);
 
 if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
     console.log('Инн некорректный');
@@ -35,7 +35,7 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
 } else {
     console.log(`Инн прошел проверку на подлинность`);
     alert(`Инн прошел проверку на подлинность`);
-
+// -------------------------------------------------------------------------------------------------
     // Определение пола
     if( arrInn[8] % 2 == 0 ){
         console.log(`Пол владельца ИНН - женский`);
@@ -44,8 +44,11 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
         console.log(`Пол владельца ИНН - мусжкой`);
         answer["Sex"] = "мужской";
     }
-    // Определение пола
     console.log('Обьект с ответами', answer);
+
+    // Определение пола
+// ---------------------------------------------------------------------------------------------------
+    // Дата рождения
 
     let dateBirthdayDays = arrInn.slice(0, 5).join('');
     console.log(`Дни с 1900 года до дня рождения в днях`, dateBirthdayDays);
@@ -64,6 +67,10 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
     // answer["Birthday_month"] = dateBirthday.getMonth() + 1;
     // answer["Birthday_day"] = dateBirthday.getDate();
     console.log(answer);
+                                       
+    // Дата рождения
+// -------------------------------------------------------------------------------------------------------
+    // Возраст
 
     let age = new Date() - dateBirthday; 
     age = age / 1000; // убираем милисекунды
@@ -76,6 +83,9 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
 
     answer["Age"] = age;
     console.log(answer);
+
+    // Возраст
+// ------------------------------------------------------------------------------------------------
 
     alert(`Ваш ИНН - ${inn}
 Пол - ${answer.Sex} 
