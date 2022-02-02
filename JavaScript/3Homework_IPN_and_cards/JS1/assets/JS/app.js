@@ -24,6 +24,7 @@
 
     let answer = {};    
 
+    console.dir(Date);
 
 if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
     console.log('Инн некорректный');
@@ -41,11 +42,19 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
         answer["sex"] = "женский";
     } else {
         console.log(`Пол владельца ИНН - мусжкой`);
-        answer["sex"] = "женский";
+        answer["sex"] = "мужской";
     }
     // Определение пола
     console.log('Обьект с ответами', answer);
 
+    let dateBirthdayDays = arrInn.slice(0, 5).join('');
+    console.log(`Дни с 1900 года до дня рождения в днях`, dateBirthdayDays);
+
+    let year1900 = new Date(1900, 0, 1);
+    console.log('1900 год', year1900);
+
+    let dateBirthday = new Date(1899, 11, (31+(+dateBirthdayDays)));
+    console.log('Дата рождения человека по ИНН', dateBirthday);
 
 
 }
