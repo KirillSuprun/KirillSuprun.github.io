@@ -58,7 +58,7 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
 
     let arrDateBirthday = [dateBirthday.getDate(), dateBirthday.getMonth() + 1, dateBirthday.getFullYear()];
 
-    let birthday = arrDateBirthday.join('-')
+    let birthday = arrDateBirthday.join('.')
     answer["Birthday"] = birthday;
     // answer["Birthday_year"] = dateBirthday.getFullYear();
     // answer["Birthday_month"] = dateBirthday.getMonth() + 1;
