@@ -75,7 +75,7 @@ if(card.length >= 13 && card.length <= 19
  else // MasterCard 
    if(card.length == 16 
     && 
-    (FirstTwo >=  51 && FirstTwo <= 55) || (FirstSix >= 222100 && FirstSix <= 272099)
+    ((FirstTwo >=  51 && FirstTwo <= 55) || (FirstSix >= 222100 && FirstSix <= 272099))
     && 
     isCorrect == true){
         alert(`Заданная карта - ${card} платежной системы MasterCard`);
