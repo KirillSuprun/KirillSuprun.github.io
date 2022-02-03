@@ -9,24 +9,46 @@
     let arrInn = innString.split('');
     console.log('Масивом', arrInn);
 
-    let sumForControl = (arrInn[0] * (-1)) + (arrInn[1] * 5) + (arrInn[2] * 7) + (arrInn[3] * 9) + (arrInn[4] * 4) + (arrInn[5] * 6)+ (arrInn[6] * 10) + (arrInn[7] * 5) + (arrInn[8] * 7);  
+    // let try1 = arrInn[0] * -1;
+    // console.log(`try1`, try1);
+    // let try2 = arrInn[1] * 5;
+    // console.log(`try2`, try2);
+    // let try3 = arrInn[2] * 7;
+    // console.log(`try3`, try3);
+    // let try4 = arrInn[3] * 9;
+    // console.log(`try4`, try4);
+    // let try5 = arrInn[4] * 4;
+    // console.log(`try5`, try5);
+    // let try6 = arrInn[5] * 6;
+    // console.log(`try6`, try6);
+    // let try7 = arrInn[6] * 10;
+    // console.log(`try7`, try7);
+    // let try8 = arrInn[7] * 5;
+    // console.log(`try8`, try8);
+    // let try9 = arrInn[8] * 7;
+    // console.log(`try9`, try9);
+    
+    // let sumtry = try1 + try2 + try3 + try4 + try5 + try6 + try7 + try8 + try9;
+    // console.log(`summa ${sumtry}`);
+
+    let sumForControl = (arrInn[0] * -1) + (arrInn[1] * 5) + (arrInn[2] * 7) + (arrInn[3] * 9) + (arrInn[4] * 4) + (arrInn[5] * 6)+ (arrInn[6] * 10) + (arrInn[7] * 5) + (arrInn[8] * 7);  
     //                 -3                *20(17)          +56(73)         +27(100)          +8(108)             0(108)         +20(128)          +10(138)            +56(194)
     console.log(`Сумма по формуле - Х = А*(-1) + Б*5 + В*7 + Г*9 + Д*4 + Е*6 + Ж*10 + З*5 + И*7 = ${sumForControl}`);
 
-    sumForControl = Math.floor(sumForControl / 11);
-    console.log(`Сумма деленная на 11 = ${sumForControl}`);
+    sumForControl = sumForControl - (Math.floor(sumForControl / 11) * 11);
+    // console.log(`Сумма деленная на 11 = ${sumForControl}`);
 
-    let controlNumber = (sumForControl * 11).toString().split('').reverse();
-    console.log(`Контрольное число в реверсе -`, controlNumber);
-    console.log(`Контрольная цифра для проверки действительности ИНН`,controlNumber[0]);
+    // let controlNumber = (sumForControl * 11).toString().split('').reverse();
+    // console.log(`Контрольное число в реверсе -`, controlNumber);
+    // console.log(`Контрольная цифра для проверки действительности ИНН`,controlNumber[0]);
 
-    console.log(controlNumber[0], `=?`, arrInn[9]);
+    console.log(sumForControl, `=?`, arrInn[9]);
 
     let answer = {};    
 
     // console.dir(Date);
 
-if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
+if(innString.length != 10 && sumForControl !== arrInn[9]){
     console.log('Инн некорректный');
     alert("Вы ввели некорректный ИНН, попробуйте еще раз");
     
@@ -93,6 +115,7 @@ if(innString.length != 10 || controlNumber[0] !== arrInn[9]){
 Полных лет - ${answer.Age}`
     )
 }
+
 
 
 
