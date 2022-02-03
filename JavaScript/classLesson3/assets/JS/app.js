@@ -163,29 +163,30 @@
 // 666666666666666666666666666666666666666666666666666666
                 // Метод ЛУНА
 
-    let  card = '2221001390173620';
+    let  card = '3539477434274733939';
+    console.log(card);
 
     card = card.split('').reverse().map(i => +i);
     console.log(card);
 
 
-    // let sum = 0;
+    let sum = 0;
 
-    // for(let i = 0; i < card.length; i++){
+    for(let i = 0; i < card.length; i++){
         
-    //     if(i % 2 == 0){
-    //         sum = sum + card[i];
-    //     } else {
-    //         let double = card[i] * 2;
-    //         sum = sum + (double > 9 ? double - 9 : double);
-    //     } 
-    // }   
+        if(i % 2 == 0){
+            sum = sum + card[i];
+        } else {
+            let double = card[i] * 2;
+            sum = sum + (double > 9 ? double - 9 : double);
+        } 
+    }   
     
-    // console.log(sum);
+    console.log(sum);
 
-    // let isCorrect = sum % 10 == 0;
+    let isCorrect = sum % 10 == 0;
     
-    // console.log(`Is Correct:`, isCorrect);
+    console.log(`Is Correct:`, isCorrect);
 
 
 // 6666666666666666666666666666666666666666666666666666666
