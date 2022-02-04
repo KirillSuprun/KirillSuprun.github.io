@@ -163,30 +163,30 @@
 // 666666666666666666666666666666666666666666666666666666
                 // Метод ЛУНА
 
-    let  card = '3539477434274733939';
-    console.log(card);
+    // let  card = '3539477434274733939';
+    // console.log(card);
 
-    card = card.split('').reverse().map(i => +i);
-    console.log(card);
+    // card = card.split('').reverse().map(i => +i);
+    // console.log(card);
 
 
-    let sum = 0;
+    // let sum = 0;
 
-    for(let i = 0; i < card.length; i++){
+    // for(let i = 0; i < card.length; i++){
         
-        if(i % 2 == 0){
-            sum = sum + card[i];
-        } else {
-            let double = card[i] * 2;
-            sum = sum + (double > 9 ? double - 9 : double);
-        } 
-    }   
+    //     if(i % 2 == 0){
+    //         sum = sum + card[i];
+    //     } else {
+    //         let double = card[i] * 2;
+    //         sum = sum + (double > 9 ? double - 9 : double);
+    //     } 
+    // }   
     
-    console.log(sum);
+    // console.log(sum);
 
-    let isCorrect = sum % 10 == 0;
+    // let isCorrect = sum % 10 == 0;
     
-    console.log(`Is Correct:`, isCorrect);
+    // console.log(`Is Correct:`, isCorrect);
 
 
 // 6666666666666666666666666666666666666666666666666666666
@@ -216,4 +216,14 @@
 
 // 77777777777777777777777777777777777777777777777777777777
 
-
+// let timeNow = new Date();
+// let age = new Date().getFullYear() - (new Date().getFullYear() - 20); 
+    
+//     if(timeNow.getMonth() < timeNow.getMonth()) {
+//         age = age - 1;
+//     } else {
+//         if(timeNow.getDate() < (timeNow.getDate() -1) ){
+//             age = age - 1;
+//         }
+//     }
+//     console.log(`Полных Лет - ${age}`);

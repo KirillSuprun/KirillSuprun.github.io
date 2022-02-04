@@ -94,14 +94,29 @@ if(innString.length != 10 && sumForControl !== arrInn[9]){
 // -------------------------------------------------------------------------------------------------------
     // Возраст
 
-    let age = new Date() - dateBirthday; 
-    age = age / 1000; // убираем милисекунды
-    age = age / 60; // получаем в минутах 
-    age = age / 60; // получаем в часах 
-    age = age /24; // получаем в днях
-    age = age / 365; // в годах
-    age = Math.floor(age);
-    console.log(`Полных лет -`, age);
+    // let age = new Date() - dateBirthday; 
+    // age = age / 1000; // убираем милисекунды
+    // age = age / 60; // получаем в минутах 
+    // age = age / 60; // получаем в часах 
+    // age = age /24; // получаем в днях
+    // age = age / 365; // в годах
+    // age = Math.floor(age);
+    // console.log(`Полных лет -`, age);
+
+    let timeNow = new Date();
+    console.log(`Time Noew`, timeNow);
+
+    let age = new Date().getFullYear() - dateBirthday.getFullYear(); 
+    
+    if(timeNow.getMonth() < dateBirthday.getMonth()) {
+        age = age - 1;
+    } else {
+        if(timeNow.getDate() < dateBirthday.getDate()){
+            age = age - 1;
+        }
+    }
+    console.log(`Полных Лет - ${age}`)
+
 
     answer["Age"] = age;
     console.log(answer);
