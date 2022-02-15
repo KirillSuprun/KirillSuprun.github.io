@@ -1,5 +1,6 @@
 body{
     background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    min-height: 100vh;
 }
 
 
