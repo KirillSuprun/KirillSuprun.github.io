@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+}
+
+
+
+.card{
+    background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe);
+    border-radius: 25px !important;
+}
+
+.card-img-top{
+    
+    
+    height: 40vh !important;
+    border-radius: 25px !important;
+
+
+}
+
+@media (min-width: 800px) {
+
+ .card{
+    background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe);
+    transition: 0.5s;
+    
+    min-height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.aboutText{
+    /* max-height: 20vh !important; */
+    /* overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    background-color: yellow; */
+    flex-grow: 1 !important;
+}
+
+.card-img-top{
+    /* width: 100%; */
+    /* height: 10%; */
+    /* height: 40vh !important; */
+    /* height: 30vh !important; */
+    border-radius: 25px !important;
+
+
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+
+}
+
+}
