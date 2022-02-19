@@ -25,8 +25,8 @@ let arrRate = dataRate.map(i => ({
     txt: i.txt,
     cc: i.cc,
     rate: i.rate,
-    flags: [],
-    nameOff: [],
+//     flags: [],
+//     nameOff: [],
 }
 ));
 
@@ -36,14 +36,19 @@ console.log(`arrRate`, arrRate);
 let arrCountries = countries.map(j => ({
     
     nameRus: j.translations.rus.official,
-    currensies: j.currencies,
+    currencies: j.currencies,
     flags: j.flags.png
 
 }));
 
 console.log(`arrCountries`, arrCountries);
 
-
+for (let i =0; i < arrCountries.length; i++ ) {
+    if (arrCountries[i].currencies == undefined) {
+        arrCountries[i].currencies = {NON : 'no currency'};
+    }
+    arrCountries[i].currencies = Object.keys(arrCountries[i].currencies).join('');
+}
 
 let arrAnswer = arrRate.slice(0, );
 console.log(`arrAnswer`, arrAnswer);
@@ -54,54 +59,54 @@ console.log(`arrAnswer.lentgh`, arrAnswer.length);
 console.log(`arrCountries.length`, arrCountries.length);
 
 
-for (let i = 0; i < arrAnswer.length; i++) {
-    // console.log(`arrAnswer[i].cc`, `${arrAnswer[i].cc}`)
-    for (let j = 0; j < arrCountries.length; j++) {
-        // console.log(`${arrCountries[j].nameRus}`);
-        // console.log(`arrCountries[j].currencies`, arrCountries[j].currensies, j)
+// for (let i =0; i < arrCountries.length; i++ ) {
+//     if (arrCountries[i].currencies === undefined) {
+//         arrCountries[i].currencies = {NON : 'no currency'};
+//     }
+//     arrCountries[i].currencies = Object.keys(arrCountries[i].currencies).join('');
+// }
+// for (let i = 0; i < arrAnswer.length; i++) {
+//     console.log(`arrAnswer[i].cc`, `${arrAnswer[i].cc}`)
+//     for (let j = 0; j < arrCountries.length; j++) {
+    
         
-        arrCountries[j].currencies = arrCountries[j].currencies.toString();
-        console.log(arrCountries[j].currencies `arrCountries[j].currencies.toString();`);
-       
+//         arrCountries[j].currencies = arrCountries[j].currencies.toString();
+//         console.log(arrCountries[j].currencies `arrCountries[j].currencies.toString();`);
 
-        // arrAnswer[i].flags.push(`${arrCountries[j].flags}`);
-        //     arrAnswer[i].nameOff.push(`${arrCountries[j].nameRus}`);  // работает. Осталось только сравнить... 
-
-        // let x = (arrCountries[j].currencies !== undefined)
-        // console.log(`x`, x)
-
-        if (arrCountries[j].currencies !== undefined && `${arrAnswer[i].cc}` in arrCountries[j].currensies){
-            console.log(`work!`);
-            arrAnswer[i].flags.push(`${arrCountries[j].flags}`);
-            arrAnswer[i].nameOff.push(`${arrCountries[j].nameRus}`);
-        } 
-    }
-}
+//         if (arrCountries[j].currencies !== undefined && `${arrAnswer[i].cc}` in arrCountries[j].currensies){
+//             console.log(`work!`);
+//             arrAnswer[i].flags.push(`${arrCountries[j].flags}`);
+//             arrAnswer[i].nameOff.push(`${arrCountries[j].nameRus}`);
+//         } 
+//     }
+// }
 
 
-
+// ${countries.filter(pos => pos.currency.includes(item.cc)).map(counter => `
+//             <img src="${counter.flag}" alt="" style="max-width: 5rem" class="p-1 border border-primary">`).join('')}
 
 
 
 console.log(`arrAnswer`, arrAnswer);
 
 
-// cardsForRate.innerHTML = dataRate.map((rates) => `<div id="" class="card text-center">
-//                                                 <div class="card-body">
-//                                                 <h5 class="card-title"> ${rates.txt}, ${rates.cc} </h5>
-//                                                 <p class="card-text"> Курси валют: ${(Math.round(rates.rate*100))/100}грн. </p>
-//                                                 <p class="card-text"> Країни, де використовують:  </p>
-//                                                 <p class="card-text"> 
-                                            
-//                                                         </p>
-//                                                 // </div>
-//                                                 // </div>` 
+cardsForRate.innerHTML = arrAnswer.map(answer  => `<div id="" class="card   text-center">
+                                                <div class="card-body">
+                                                <h5 class="card-title"> ${answer.txt}, ${answer.cc} </h5>
+                                                <p class="card-text"> Курси валют: ${(Math.round(answer.rate*100))/100}грн. </p>
+                                                <p  class="card-text row row-cols-3"> Країни, де використовують:  </p>
+                                                <p class="card-text"> 
+                                                ${arrCountries.filter(pos => pos.currencies.includes(answer.cc)).map(j => `
+                                                <img title="${j.nameRus}" src="${j.flags}" alt="" class="p-1 border border-primary">`).join('')}
+                                                        </p>
+                                                 </div>
+                                                 </div>`
                                                 
                                                 
-//                                                 // for(let i = 0; i < flagsPNG.lenght; i++){
                                                 
                                                 
-//                                                 ).join();
+                                                
+).join();
 
 
 // const URL = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
@@ -191,4 +196,3 @@ console.log(`arrAnswer`, arrAnswer);
      
 // //      }
 // //   })
-
