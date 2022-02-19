@@ -63,7 +63,7 @@ footer{
   }
   
   .down_link:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 
 main{

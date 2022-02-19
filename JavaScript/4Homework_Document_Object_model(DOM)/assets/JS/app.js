@@ -119,7 +119,7 @@ cardsForRate.innerHTML = arrAnswer.map(answer  => `<div class="p-2 "> <div id=""
 
 
 
-                                                 
+
 
 // const URL = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 // const URL2 = 'https://restcountries.com/v3.1/all';
