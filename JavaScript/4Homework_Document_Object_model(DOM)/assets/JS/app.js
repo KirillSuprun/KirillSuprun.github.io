@@ -107,7 +107,7 @@ cardsForRate.innerHTML = arrAnswer.map(answer  => `<div class="p-2 "> <div id=""
                                                         </p>
                                                  </div>
                                                  </div> </div>`)
-                                                 .join();
+                                                 .join('');
 
 
 
