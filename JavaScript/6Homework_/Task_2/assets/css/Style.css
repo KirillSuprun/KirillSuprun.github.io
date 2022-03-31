@@ -1,0 +1,87 @@
+body{
+    
+    min-height: 100vh;
+    background-color: rgb(119, 118, 118) !important;
+    
+}
+
+.container{
+    background-color: rgb(119, 118, 118) !important;
+    
+
+}
+
+.card{
+    /* background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe); */
+    
+    border-radius: 25px !important;
+    
+    
+}
+
+.card-img-top{
+    
+    /* object-fit: fill; */
+    /* max-height: 50vh; */
+    border-radius: 25px !important;
+    object-fit: contain;
+
+}
+
+@media (min-width: 800px) {
+
+
+.container{
+    background-color: rgb(119, 118, 118) !important;
+    
+
+}
+
+ .card{
+    height: 100% !important;
+    /* background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe); */
+    transition: 0.5s;
+
+    object-fit: contain;
+    /* min-height: 800px; */
+    
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin: 10px;
+    /* float: left; */
+    text-overflow: ellipsis !important;
+
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+/* div.top-sizing   div {
+    margin-top: -1rem !important;
+
+} */
+
+.card-title{
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+
+.aboutText{
+   
+    flex-grow: 1 !important;
+    /* max-height: 50%;  */
+    
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+
+}
+
+
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+
+}
+}
