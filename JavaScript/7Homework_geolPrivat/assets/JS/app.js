@@ -91,7 +91,6 @@
     let lat = 0;
     let long = 0; 
 
-
     function success(pos){
         
         let crd = pos.coords;
@@ -126,6 +125,7 @@
         //     }
         // }
 
+        
         for (let i = 0; i < arrInfo.length - 1; i++) {
             for (let j = 0; j < arrInfo.length - 1 - i; j++) {
                 
@@ -140,10 +140,10 @@
 
         console.log(`arrInfo`, arrInfo);
 
-        renderFun(arrInfo);
+       renderFun(arrInfo);
 
 
-    }; 
+    }
 // определения местоположения и сортировка массива с данными
     
 
