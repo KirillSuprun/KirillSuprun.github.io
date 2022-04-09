@@ -36,29 +36,28 @@
 
         <main class="bg-white mt-1 py-3 flex-grow-1" id="app">
 
-            <div class="fw-bold m-3 fs-3"> 
+            <div id="first1" class="fw-bold m-3 fs-3"> 
                 ИНН:
                 
-                <input v-model='inn' 
+                <input  v-model='inn' 
                 pattern="" 
                 required="" 
                 class="mx-2 p-1" 
                 placeholder="Введите Ваш ИНН" 
                 type="number"> 
                 
-                <button type="button" class="btn btn-secondary p-1"> Проверить </button>  
+                <button @click="onSubmit" type="button" class="btn btn-secondary p-1"> Проверить </button>  
             </div>
 
-            <div  class="alert alert-danger fs-3 fw-bold mx-3"> ИНН не подлинный   </div>
+            <div v-if="(validation == false)" class="alert alert-danger fs-3 fw-bold mx-3"> ИНН не подлинный   </div>
+            <div v-if="(validation == true)" class="alert alert-success fs-3 fw-bold mx-3">  ИНН подлинный  </div>
 
-            <div class="alert alert-success fs-3 fw-bold mx-3">  ИНН подлинный  </div>
-
-            <div class="fw-bold fs-5 my-1"> Пол: <span> ... </span> </div>
-            <div class="fw-bold fs-5 my-1"> Дата рождения: <span> ... </span> </div>
-            <div class="fw-bold fs-5 my-1"> Возраст: <span> ... </span> </div>
-            <div class="fw-bold fs-5 my-1"> Знак зодиака: <span> ... </span>  </div>
-            <div class="fw-bold fs-5 my-1"> По восточному календарю: <span> ... </span>  </div>
-            <div> {{inn}}    {{arrInn}}      </div>
+            <div class="fw-bold fs-5 my-1"> Пол: <span> {{sex}} </span> </div>
+            <div  class="fw-bold fs-5 my-1"> Дата рождения: <span> {{birthday}}  </span> </div>
+            <div class="fw-bold fs-5 my-1"> Возраст: <span> {{age}} </span> </div>
+            <div class="fw-bold fs-5 my-1"> Знак зодиака: <span> {{zodiac}} </span>  </div>
+            <div class="fw-bold fs-5 my-1"> По восточному календарю: <span> {{chinaZod}} </span>  </div>
+            <!-- <div> {{inn}}    {{arrInn}}  {{countNumber}}    </div> -->
 
 
 
