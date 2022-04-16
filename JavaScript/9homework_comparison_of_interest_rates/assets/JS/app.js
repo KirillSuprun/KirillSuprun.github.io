@@ -1,7 +1,7 @@
 
     import {createApp} from "../../node_modules/vue/dist/vue.esm-browser.prod.js"
 
-    const URL = "../../dataPB.json"
+    const URL = "./dataPB.json"
     const rateURL = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
 
     const appConfig = {

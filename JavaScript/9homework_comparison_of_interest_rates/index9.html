@@ -68,7 +68,7 @@
                 <div class="small_vision"> <h5> Проценты по долгу </h5> </div>
                 <div v-if="!payPercents" class="first_arrow"> <h3>  0 </h3> </div>
                 <div v-else-if="payPercents && payPercents > 0" class="first_arrow"> <h3> <img width="40" src="./assets/up.png" alt=""> +{{payPercents}}% </h3> </div>
-                <div v-else="payPercents && payPercents < 0" class="first_arrow"> <h3> <img width="40" src="./assets/Down.png" alt="">{{payPercents}}% </h3> </div>
+                <div v-else="payPercents && payPercents < 0" class="first_arrow"> <h3> <img width="40" src="./assets/Down.png" alt=""> {{payPercents}}% </h3> </div>
                 
                 <div class="small_vision"> <h5> Проценты по возврату </h5> </div>
                 <div v-if="!repayPercents" class="second_arrow"> <h3> 0 </h3> </div>
@@ -105,8 +105,8 @@
 
         <footer class="text-center">
         
-           <div> <a class="fs-2" href="../index.html"> <i class="animate__animated animate__heartBeat fw-bold fs-2 fas
-                text-dark fa-home"> </i></a> </div>
+           <div> <a class="fs-5 fw-bold text-decoration-none text-black" href="../index.html"> <i class="animate__animated animate__heartBeat fw-bold fs-2 fas
+                text-dark fa-home"> </i> Home Page </a> </div>
             <div>
                 <div>Автор иконок: <a href="https://www.flaticon.com/ru/authors/afian-rochmah-afif" title="Afian Rochmah Afif"> Afian Rochmah Afif </a> from <a href="https://www.flaticon.com/ru/" title="Flaticon"> www.flaticon.com </a></div>
             </div>
