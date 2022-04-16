@@ -33,7 +33,7 @@ body{
     display: grid;
 }
 
-main{
+/* main{
     margin: 2rem 0 2rem 0;
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
@@ -41,5 +41,62 @@ main{
     grid-template-areas: 'boxOne  .       boxThird'
                          'boxOne  boxTwo  boxThird';
                          
+} */
+
+.deposit{
+    background-color: rgba(86, 253, 81, 0.356);
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem;
+}
+
+.obligation{
+    background-color: rgba(253, 81, 81, 0.356);
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem;
+}
+
+.first_arrow{
+    margin-top: 1rem;
+}
+
+.second_arrow{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} 
+
+@media(min-width: 1000px){
+    main{
+        margin: 2rem 0 2rem 0;
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr 2.5fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'boxOne  .       boxThird'
+                             'boxOne  boxTwo  boxThird';
+                             
+    }
+
+    .deposit{
+        background-color: rgba(86, 253, 81, 0.356);
+        margin: 1rem 6rem 1rem 6rem;
+        padding: 1rem;
+    }
+    
+    .obligation{
+        background-color: rgba(253, 81, 81, 0.356);
+        margin: 1rem 6rem 1rem 6rem;
+        padding: 1rem;
+    }
+    
+    .first_arrow{
+        margin-top: -1rem;
+    }
+    
+    .second_arrow{
+        margin-top: 6.5rem;
+    } 
+    
+    .small_vision{
+        display: none;
+    }
 }
 

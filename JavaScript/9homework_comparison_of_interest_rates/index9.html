@@ -42,41 +42,62 @@
                 <div>  <h3> Период 1  </h3> 
                     
                     <div>
-                        начало <input v-model="dateOneStart" type="date"> {{dateOneStart}}
+                        начало <input v-model="dateOneStart" type="date"> 
                     </div> 
 
                     <div class="mt-3" >
-                        конец <input v-model="dateOneEnd" type="date"> {{dateOneEnd}}
+                        конец <input v-model="dateOneEnd" type="date"> 
                     </div> 
                     
                     <!-- <button @click="buttonCheck" > data  </button> -->
 
                 </div>
 
-                <div> Логика    </div>
+                <div> 
+                    <div class=""> <h3> Взято в долг </h3> <h5  class="deposit"> {{firstPayDay}} млн. грн. </h5>  </div>  
+
+                    <div> <h3> Необходимо вернуть </h3> <h5  class="obligation"> {{firstRepayDay}} млн. грн. </h5>                   </div>
+
+                </div>
 
             </div>
 
 
-            <div class="box2" id="boxTwo"> 222222 {{title}} </div>
+            <div class="box2" id="boxTwo"> 
+                
+                <div class="small_vision"> <h5> Проценты по долгу </h5> </div>
+                <div v-if="!payPercents" class="first_arrow"> <h3>  0 </h3> </div>
+                <div v-else-if="payPercents && payPercents > 0" class="first_arrow"> <h3> <img width="40" src="./assets/up.png" alt=""> +{{payPercents}}% </h3> </div>
+                <div v-else="payPercents && payPercents < 0" class="first_arrow"> <h3> <img width="40" src="./assets/Down.png" alt="">{{payPercents}}% </h3> </div>
+                
+                <div class="small_vision"> <h5> Проценты по возврату </h5> </div>
+                <div v-if="!repayPercents" class="second_arrow"> <h3> 0 </h3> </div>
+                <div v-else-if="repayPercents && repayPercents > 0" class="second_arrow"> <h3> <img width="40" src="./assets/up.png" alt="">  +{{repayPercents}}% </h3> </div>
+                <div v-else="repayPercents && repayPercents < 0" class="second_arrow">   <h3> <img width="40" src="./assets/Down.png" alt=""> {{repayPercents}}% </h3> </div>
+
+            </div>
 
             <div class="box3" id="boxThird"> 
                 
                 <div>  <h3> Период 2  </h3> 
                     
                     <div >
-                        начало <input v-model="dateTwoStart" type="date"> {{dateTwoStart}}
+                        начало <input v-model="dateTwoStart" type="date">
                     </div>  
 
                     <div class="mt-3">
-                        конец <input v-model="dateTwoEnd" type="date"> {{dateTwoEnd}}
+                        конец <input v-model="dateTwoEnd" type="date">
                     </div> 
 
                 </div>
 
-                <div> Логика    </div>
-            
-            
+                <div> 
+                     
+                    <div class=""> <h3> Взято в долг </h3> <h5  class="deposit"> {{secondPayDay}} млн. грн. </h5>  </div>  
+
+                    <div> <h3> Необходимо вернуть </h3> <h5  class="obligation"> {{secondRepayDay}} млн. грн. </h5> </div>
+
+                </div> 
             </div>
 
 
@@ -84,8 +105,11 @@
 
         <footer class="text-center">
         
-            <a class="fs-2" href="../index.html"> <i class="animate__animated animate__heartBeat fw-bold fs-2 fas
-                text-dark fa-home"> </i></a>
+           <div> <a class="fs-2" href="../index.html"> <i class="animate__animated animate__heartBeat fw-bold fs-2 fas
+                text-dark fa-home"> </i></a> </div>
+            <div>
+                <div>Автор иконок: <a href="https://www.flaticon.com/ru/authors/afian-rochmah-afif" title="Afian Rochmah Afif"> Afian Rochmah Afif </a> from <a href="https://www.flaticon.com/ru/" title="Flaticon"> www.flaticon.com </a></div>
+            </div>
         </footer>
 
 

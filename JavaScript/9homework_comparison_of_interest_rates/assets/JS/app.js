@@ -3,19 +3,15 @@
 
     const URL = "../../dataPB.json"
     const rateURL = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
-    
-    // let data = await fetch(URL);
-    //     data = data.json()
-
 
     const appConfig = {
         data(){
             return {
-                title: "Русский корабль иди",
                 dateOneStart: '',
                 dateOneEnd: '',
                 dateTwoStart: '',
                 dateTwoEnd: '',
+                answer: [],
             }
         },
 
@@ -58,22 +54,116 @@
                 }
             });
 
-
-
             console.log(`data`, data);
 
             let dataSh = data.map(i => ({
                 paydate: i.paydate,
                 repaydate: i.repaydate,
-                // valcode: i.valcode,
-                
+                attraction: i.attraction,
             })
-            )
+            );
+
+            this.answer = dataSh;
+
+            console.log(`answer`, this.answer)
         },
         
         computed: {
-           
+                firstPayDay(){
+                let dateOneStart1 = this.dateOneStart.split('-').join('.');
+                let dateOneEnd1 = this.dateOneEnd.split('-').join('.');
+                let result = 0;
 
+                if(dateOneStart1 && dateOneEnd1){
+                        for(let i = 0; i < this.answer.length; i++){
+                            if(this.answer[i].paydate.split('.').reverse().join('.') >= dateOneStart1 && this.answer[i].paydate.split('.').reverse().join('.') <= dateOneEnd1){
+                                result = result + this.answer[i].attraction;
+                            }
+                        }
+                }
+
+                return Math.round(result / 1000000) // * 100) /100  // приводим к млн. грн. 
+            },
+
+            firstRepayDay(){
+                let dateOneStart1 = this.dateOneStart.split('-').join('.');
+                let dateOneEnd1 = this.dateOneEnd.split('-').join('.');
+                let result = 0;
+                
+                if(dateOneStart1 && dateOneEnd1){
+                        for(let i = 0; i < this.answer.length; i++){
+                            if(this.answer[i].repaydate.split('.').reverse().join('.') >= dateOneStart1 && this.answer[i].repaydate.split('.').reverse().join('.') <= dateOneEnd1){
+                                result = result + this.answer[i].attraction;
+                            }
+                        }
+                }
+
+                return Math.round(result / 1000000) // * 100) /100  // приводим к млн. грн. 
+            },
+
+            secondPayDay(){
+                let dateTwoStart1 = this.dateTwoStart.split('-').join('.');
+                let dateTwoEnd1 = this.dateTwoEnd.split('-').join('.');
+                let result = 0;
+
+                if(dateTwoStart1 && dateTwoEnd1){
+                        for(let i = 0; i < this.answer.length; i++){
+                            if(this.answer[i].paydate.split('.').reverse().join('.') >= dateTwoStart1 && this.answer[i].paydate.split('.').reverse().join('.') <= dateTwoEnd1){
+                                result = result + this.answer[i].attraction;
+                            }
+                        }
+                }
+
+                return Math.round(result / 1000000) // * 100) /100  // приводим к млн. грн. 
+            },
+
+            secondRepayDay(){
+                let dateTwoStart1 = this.dateTwoStart.split('-').join('.');
+                let dateTwoEnd1 = this.dateTwoEnd.split('-').join('.');
+                let result = 0;
+
+                if(dateTwoStart1 && dateTwoEnd1){
+                        for(let i = 0; i < this.answer.length; i++){
+                            if(this.answer[i].repaydate.split('.').reverse().join('.') >= dateTwoStart1 && this.answer[i].repaydate.split('.').reverse().join('.') <= dateTwoEnd1){
+                                result = result + this.answer[i].attraction;
+                            }
+                        }
+                }
+
+                return Math.round(result / 1000000) // * 100) /100  // приводим к млн. грн. 
+            },
+
+            payPercents(){
+               if(this.firstPayDay && this.secondPayDay){ 
+                    let result = (this.secondPayDay / (this.firstPayDay / 100)) - 100;
+                    result = Math.round(result * 100)/100;
+                        // if(result > 0){
+                        //     result = '+' + result.toString() + '%';
+                        // } else if(result < 0){
+                        //     result = /*'-'  + */`${result}` + '%';
+                        // } else {
+                        //     result = `${result}` + '%';
+                        // }
+                    
+                    return result 
+               } 
+            },
+
+            repayPercents(){
+                if(this.firstRepayDay && this.secondRepayDay){ 
+                     let result = (this.secondRepayDay / (this.firstRepayDay / 100)) - 100;
+                     result = Math.round(result * 100)/100;
+                        //  if(result > 0){
+                        //      result = '+' + result.toString() + '%';
+                        //  } else if(result < 0){
+                        //      result = /*'-'  + */`${result}` + '%';
+                        //  } else {
+                        //      result = `${result}` + '%';
+                        //  }
+                     
+                     return result 
+                } 
+             },
 
         }
 
