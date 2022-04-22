@@ -34,9 +34,19 @@
             <div>  Корзина  </div>
         </nav>
 
+        <!-- <img width="100" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt=""> -->
+
         <main class="bg-white row row-cols-2 row-cols-lg-5 m-1 text-center py-3">
-           
-            <card-shop v-for="item in list">     </card-shop>
+            <!-- @on-change-quantity=""  
+            :name="item.title"
+            :img="item.image"
+            :descrip="item.description"
+            :cost="item.price"
+            :element-number="i"-->
+            <card-shop :card="item" v-for="(item, i) in list"
+                       
+            >
+            >     </card-shop>
 
         </main>
 

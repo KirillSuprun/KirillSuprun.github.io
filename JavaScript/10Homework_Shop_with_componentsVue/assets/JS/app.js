@@ -19,6 +19,8 @@
             let data = await fetch(URL);
                 data = await data.json();
 
+                data = data.map(item => ({...item, quantity: 0}))
+
             this.list = data;
             console.log(`this.list`, this.list);
         },
@@ -28,5 +30,5 @@
         }
     }
 
-    const app = createApp(appConfig)
-    app.mount('#app')
+    const app = createApp(appConfig);
+    app.mount('#app');
