@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Homework</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> -->
+
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.css">
     <!-- Font Awesome -->
 
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
@@ -21,6 +23,7 @@
     <script type="module" src="./assets/JS/app.js"></script>
     <!-- JS -->
 
+
 </head>
 
 <body>
@@ -31,23 +34,50 @@
         </header>
         
         <nav class="text-end bg-white pe-5 py-2 fs-4 fw-bold m-1">
-            <div>  Корзина  </div>
+            <div>  Корзина  <i class="fa-solid fa-cart-shopping"></i> ({{}}) <span > на общую сумму - {{}}  грн </span> </div> 
         </nav>
 
         <!-- <img width="100" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt=""> -->
 
-        <main class="bg-white row row-cols-2 row-cols-lg-5 m-1 text-center py-3">
-            <!-- @on-change-quantity=""  
-            :name="item.title"
-            :img="item.image"
-            :descrip="item.description"
-            :cost="item.price"
-            :element-number="i"-->
-            <card-shop :card="item" v-for="(item, i) in list"
-                       
-            >
-            >     </card-shop>
+        <main class="bg-white m-1">
+            <div class="row row-cols-1 ps-4 pt-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    По возрастанию
+                    </label>
+                </div>
 
+               
+
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    По снижению
+                    </label>
+                </div>
+
+                <div class="pt-3">
+                    <h4> Поиск <input class="" id="search" type="text" placeholder="Search"  > </h4>
+
+                </div>
+                
+            </div>    
+
+            <div class="row row-cols-2 row-cols-lg-5 text-center px-3 py-3">
+                
+
+                <!-- @on-change-quantity=""  
+                :name="item.title"
+                :img="item.image"
+                :descrip="item.description"
+                :cost="item.price"
+                :element-number="i"-->
+                <card-shop :card="item" v-for="(item, i) in list" >      </card-shop>
+
+            </div>
         </main>
 
         <footer class="text-center bg-white py-2 mt-1 mx-1">

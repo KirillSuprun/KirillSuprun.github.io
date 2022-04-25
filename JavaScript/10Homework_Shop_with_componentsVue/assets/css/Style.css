@@ -10,7 +10,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     grid-template-rows: auto auto 2fr auto;
 }
 
+#search{
+    width: 150px;
+}
+
 input{
     width: 50px;
 }
+
+
 

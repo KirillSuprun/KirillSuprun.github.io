@@ -25,6 +25,7 @@
             console.log(`this.list`, this.list);
         },
 
+        
         components: {
             'card-shop': CardShop,
         }
