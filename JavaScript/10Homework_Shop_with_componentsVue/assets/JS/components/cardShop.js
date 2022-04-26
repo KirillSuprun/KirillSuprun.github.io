@@ -3,6 +3,7 @@
         data(){
             return {
                 quantity: 0,
+                search: '',
             }
         },
 
@@ -14,6 +15,7 @@
                 if(this.quantity > 0){
                     this.quantity = 0;
                 }
+                console.log(this.search);
                 return this.quantity
             }
         },

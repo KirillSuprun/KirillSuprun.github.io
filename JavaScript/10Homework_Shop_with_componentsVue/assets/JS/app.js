@@ -11,7 +11,9 @@
         data(){
             return{
                 title: 'Candy Shop1',
-                list: []
+                list: [],
+                sort: null,
+                search: '',
             }
         },
 
@@ -23,6 +25,30 @@
 
             this.list = data;
             console.log(`this.list`, this.list);
+        },
+
+        computed: {
+            filtrPrice(){
+                let sear = this.search.trim().toLowerCase();
+
+                let result = this.list.filter(item => {
+                    for(let key in item){
+                        if(item[key].toString().toLowerCase().includes(sear) ){
+                            return true;
+                        }
+                        
+                    }
+
+                });
+
+                if(this.sort == 'up'){
+                    result.sort((a, b) => a.price - b.price);
+                } else if(this.sort == 'down'){
+                    result.sort((a, b) => b.price - a.price);
+                }
+
+                return result
+            }
         },
 
         
