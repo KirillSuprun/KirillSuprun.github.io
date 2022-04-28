@@ -10,7 +10,7 @@
     const appConfig = {
         data(){
             return{
-                title: 'Candy Shop1',
+                title: 'Candy Shop',
                 list: [],
                 sort: null,
                 search: '',
@@ -25,6 +25,19 @@
 
             this.list = data;
             console.log(`this.list`, this.list);
+        },
+
+        methods:{
+            changeQuantity(newQuantity, i){
+                console.log(`recieve`, newQuantity, i)
+                this.list[i].quantity = newQuantity;
+            },
+
+            clear(){
+                for(let item in this.list){
+                    this.list[item].quantity = 0;
+                }
+            },
         },
 
         computed: {
@@ -48,8 +61,18 @@
                 }
 
                 return result
-            }
+            },
+
+            amount(){
+                return this.list.reduce((acc, item) => acc + item.quantity, 0)
+            },
+
+            totalCost(){
+                return this.list.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
+            },
         },
+
+        
 
         
         components: {

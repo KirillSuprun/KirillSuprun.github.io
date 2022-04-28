@@ -18,5 +18,81 @@ input{
     width: 50px;
 }
 
+img{
+    border-radius: 25px 25px 0 0 !important;
+    /* max-width: 100%; */
+    object-fit: contain;
+    max-height: 25vh;
+}
 
+.card-img-top{
+    height: 25vh;
+}
 
+.card{
+    height: 75vh;
+    
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    object-fit: contain;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    text-overflow: ellipsis;
+}
+
+.card-text{
+    max-height: 10.5vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-title{
+    height: 9vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media(min-width: 600px){
+    .card-title{
+        height: 11vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+
+    
+}
+
+@media(min-width: 700px){
+    .card-text{
+        max-height: 12vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .card-title{
+        height: 12vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media(min-width: 900px){
+    .card-text{
+        max-height: 10.5vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .card-title{
+        height: 11vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
