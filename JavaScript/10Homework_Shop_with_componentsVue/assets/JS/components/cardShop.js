@@ -23,9 +23,6 @@
         watch:{
             quantity(newValue, oldValue){
                 this.$emit('quantity-change', this.quantity, this.cardNumber); 
-                
-                
-
             }
         },
 
