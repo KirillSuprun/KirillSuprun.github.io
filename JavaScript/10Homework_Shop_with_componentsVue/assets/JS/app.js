@@ -31,6 +31,7 @@
             changeQuantity(newQuantity, i){
                 console.log(`recieve`, newQuantity, i)
                 this.list[i].quantity = newQuantity;
+                console.log(`list`, this.list);
             },
 
             clear(){
