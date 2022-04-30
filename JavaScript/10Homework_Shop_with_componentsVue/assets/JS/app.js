@@ -17,6 +17,7 @@
             }
         },
 
+        
         async mounted(){
             let data = await fetch(URL);
                 data = await data.json();
