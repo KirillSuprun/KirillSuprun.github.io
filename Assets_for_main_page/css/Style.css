@@ -66,14 +66,15 @@ a{
 }
 
 .link1:hover{
-    text-shadow: 0px 0px 7px rgb(86, 178, 190); 
+    text-shadow: 0px 0px 7px rgba(50, 228, 228, 0.842) 
 }
 
 .link2:hover{
     text-shadow: 0px 0px 7px rgb(230, 181, 76); 
 }
 
-span{
-    text-decoration: none !important;
 
+
+.link3:hover{
+    text-shadow: 0px 0px 7px rgb(200, 86, 245)
 }

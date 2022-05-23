@@ -1,0 +1,54 @@
+
+ body{
+    background-image: linear-gradient(to left top, #ffffff, #dddddd, #bcbcbc, #9d9d9d, #7e7e7e);
+    min-height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 100px 3fr 0.1fr;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header  h1{
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    color:rgb(0, 0, 0); 
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  
+nav  h2{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color:rgb(0, 0, 0); 
+    margin-bottom: 0px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+footer{
+    font-family: 'Righteous', cursive; 
+}
+
+div   h3{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(17, 17, 17); 
+    font-style: italic;
+    padding: 0px 5px;
+  }
+
+div   a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+div   a:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+}
