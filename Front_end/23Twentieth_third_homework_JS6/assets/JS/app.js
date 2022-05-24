@@ -1,6 +1,5 @@
 
 
-
     let secret = Math.random() * 100; 
     secret = Math.floor(secret) + 1;
 
