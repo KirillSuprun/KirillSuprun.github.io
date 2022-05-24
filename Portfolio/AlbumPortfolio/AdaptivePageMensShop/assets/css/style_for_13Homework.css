@@ -1,0 +1,305 @@
+.cont{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navphoto{
+    display: none;
+
+}
+
+
+
+.boxexnav{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* grid-template-rows: minmax(1rem, 10rem); */
+}
+
+.navbox{
+    /* background-color: aqua; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 10rem;
+}
+
+#navbox1{
+    background-image: url(../navbox1.jpg);
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+   
+}
+
+#navbox2{
+    background-image: url(../navbox2.jpg);
+    /* justify-content: flex-start; */
+    
+}
+
+#navbox3{
+    background-image: url(../navbox3.jpg);
+    color: white;
+    
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.Navboxnames{
+    color: rgba(0, 0, 0, 0.925);  
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    margin-left: 0.5rem;
+}
+
+.navboxdiscription{
+    margin: -1rem 0 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* font-size: 1.5rem; */
+}
+
+.upline{
+    display: none;
+}
+
+.topmenu{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* font-size: 1.5rem; */
+}
+
+.menubot{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.links_margin{
+    margin-top: 1rem;
+
+}
+
+@media (min-width: 768px) {
+
+    .topmenu{
+        font-size: 1.5rem;
+    }
+
+    .links{
+        font-size: 1.5rem;
+
+    }
+
+    .menubot{
+        font-size: 2rem;
+    }
+
+    .list-group-item{
+        font-size: 1.5rem;
+
+    }
+
+}
+
+@media (min-width: 800px) {
+    .cont{
+        width: 70vw;
+        margin: 0 auto;
+        text-align: start;
+    }
+    
+    .links{
+        display: block;
+
+    }
+
+    .topmenu{
+        display: block;
+        padding: 1rem 0rem 1rem 1rem
+    }
+
+    .links_margin{
+        display: inline-block;
+
+    }
+
+
+    .navphoto{
+        display: block;
+        width: 100%;
+        height: 10%;
+        /* min-height:100px; */
+        
+    
+    }
+    
+    .topmenu{
+        padding: 0 0.5rem 0.5rem;
+    
+    }
+    
+    a{
+        /* padding: 0 0.7rem 0 0.7rem; */
+        
+    }
+    
+    .boxexnav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+        grid-template-rows: 1fr;
+    }
+    
+    .navbox{
+        /* background-color: aqua; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+    }
+    #navbox1{
+        background-image: url(../navbox1.jpg);
+        /* background-repeat: no-repeat;
+        background-size: 100%; */
+    }
+    
+    #navbox2{
+        background-image: url(../navbox2.jpg);
+        justify-content: flex-start;
+    }
+    
+    #navbox3{
+        background-image: url(../navbox3.jpg);
+        color: white;
+    }
+    
+    
+    .Navboxnames{
+        color: rgba(0, 0, 0, 0.925);  
+        font-size: 3rem;
+        font-weight: 500;
+        text-shadow: 0px 0px 3px rgb(255, 255, 255);
+        margin-left: 0.5rem;
+    }
+    
+    .navboxdiscription{
+        margin: -1rem 0 0.5rem 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 1rem;
+    
+    }
+    
+    .card{
+        background-image: linear-gradient(to right top, #ffffff, #eeeeee, #dedede, #cecece, #bebebe);
+        border-radius: 25px;
+    }
+    
+    .card-img-top{
+        width: 100%;
+        border-radius: 25px;
+    
+    }
+    
+    .footernav{
+        display: grid;
+        grid-template-columns: 1fr minmax(20rem, 3fr) 1fr;
+        margin: 2rem;
+    }
+    
+    .footernavbox{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        
+    }
+    
+    .footermenu{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: 1rem;
+    
+    }
+    
+    /* Анимации */
+    
+    a{
+        transition: 0.5s;
+    
+    }
+    
+    
+    div.links   a:hover{
+        transition: 0.3s;
+        color: rgb(5, 1, 1) !important;
+        transform: scale(1.1);
+    }
+    
+    div.topmenu   a:hover{
+        transition: 0.3s;
+        color: rgb(255, 255, 255) !important;
+        transform: scale(1.1);
+        
+    }
+    
+    .navbox{
+        transition: 0.5s;
+        z-index: 1;
+    }
+    
+    .navbox:hover{
+        transition: 0.5s;
+        transform: scale(1.05);
+        z-index: 10;
+    }
+    
+    .card{
+        transition: 0.5s;
+    }
+    
+    .card:hover{
+        transition: 0.5s;
+        transform: scale(1.05);
+    
+    }
+    .menubot{
+        padding-left: 1rem;
+
+    }
+
+
+    
+}
+
+
+
+
