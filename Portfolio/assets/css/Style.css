@@ -52,3 +52,12 @@ div   a:hover{
     transition: 0.3s;
     text-decoration: underline;
 }
+
+div.links{
+    transition: 0.3s;
+}
+
+div.links:hover{
+    transition: 0.3s;
+    transform: scale(1.2) !important;
+}
