@@ -576,18 +576,6 @@ body{
 }
 
 
-
-/* .car4{
-    position: absolute;
-    width: 200px;
-    height: 90px;
-    transform: scaleX(-1);
-    left: 710px;
-    top: 130px;
-    transform: scaleX(-1) rotate(590deg);
-
-} */
-
 .car2{
     animation-name: way2;
     animation-duration: 14s;
