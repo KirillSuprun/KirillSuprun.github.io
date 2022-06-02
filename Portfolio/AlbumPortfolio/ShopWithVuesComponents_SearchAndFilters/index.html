@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Homework</title>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> -->
+
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.css">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Animations -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS -->
+
+    <script type="module" src="./assets/JS/app.js"></script>
+    <!-- JS -->
+
+
+</head>
+
+<body>
+    
+    <div class="container " id="app">
+        <header class="text-center bg-white mb-1 mx-1">
+            <h1> {{title}} </h1>
+        </header>
+        
+        <nav class="text-end bg-white pe-5 py-2 fs-5 fw-bold m-1">
+            <div>  Корзина  <i class="fa-solid fa-cart-shopping"></i> ({{amount}}) <span > на общую сумму - {{totalCost}} USD. <i title="очистить" @click="clear" class="fa-solid fa-broom"> </i> </span> </div> 
+        </nav>
+
+        <!-- <img width="100" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt=""> -->
+
+        <main class="bg-white m-1">
+            <div class="row row-cols-1 ps-4 pt-3">
+
+                <div class="form-check">
+                    <input class="form-check-input" v-model="sort" id="sortUp" type="radio" name="sort" value="up">
+                    <label class="form-check-label" for="sortUp">
+                    По возрастанию
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" v-model="sort" id="sortDown" type="radio" name="sort" value="down">
+                    <label class="form-check-label" for="sortDown">
+                    По снижению
+                    </label>
+                </div>
+
+                <div class="pt-3">
+                    <h4> Поиск <input v-model="search" class="" id="search" type="text" placeholder="Поиск"  > </h4>
+                </div>
+                
+            </div>    
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center px-3 py-3">
+                
+
+                <!-- @on-change-quantity=""  
+                :name="item.title"
+                :img="item.image"
+                :descrip="item.description"
+                :cost="item.price"
+                :element-number="i"-->
+                <card-shop @quantity-change="changeQuantity" :card="item" v-for="(item, i) in filtrPrice" :card-number="i" >      </card-shop>
+
+            </div>
+        </main>
+
+        <footer class="text-center bg-white py-2 mt-1 mx-1">
+        
+            <div> <a class="fs-5 fw-bold text-decoration-none text-black" href="../../index_Portfolio_main.html"> <i class="animate__animated animate__heartBeat fw-bold fs-2 fas
+                 text-dark fa-home"> </i> </a> </div>
+             <div>
+         </footer>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
