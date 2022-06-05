@@ -28,13 +28,44 @@
     
     <div id="app" class="container text-center">
 
-        <header class="text-center py-2 bg-white">
-            <h1> {{title}} on ДАТА {{}} </h1>
+        <header class="text-center p-2 bg-white">
+            <h1> {{title}} on {{date}} </h1> 
         </header>
 
 
+        <main class="text-center mt-2">
+            <div class="poisk">  </div>
 
-        <main class="text-center bg-white mt-2">
+            <div class="row row-cols-1 row-cols-md-2 row row-cols-lg-3">
+
+                <div class="p-2" v-for="item in arrRate">
+                    <div id="" class="card text-center bg-white"> 
+                            <div class="card-body bgbg shadow">
+                                <h5 class="card-title fs-2"> {{item.txt}}, {{item.cc}} </h5>
+                                <p class="card-text fs-4"> Курси валют: {{item.rate}} </p>
+                                <p  class="card-text text-center fs-4"> Країни, де використовують:  </p>
+                                <p class="card-text text-center d-flex justify-content-center row row-cols-3  row-cols-md-3 row-cols-lg-3 m-2"> 
+                                        
+                                            <img 
+                                                v-for="(item, i) in item.imageFlag"
+                                                
+                                                :src="item"
+                                                :title=""
+                                                :alt="" 
+                                                class="p-1 shadow">
+                                                
+                                            
+                                </p>
+                             </div>
+                    </div>        
+                </div>
+                
+
+
+
+
+
+            </div>
 
         </main>
 

@@ -15,7 +15,6 @@ console.log(`Страны`, countries);
 // достаем данные из JSON файлов
 
 
-
 let cardsForRate = spaceForCards; // cardsForRate = document.getElementById(`spaceForCards`);
 console.log(cardsForRate);
 

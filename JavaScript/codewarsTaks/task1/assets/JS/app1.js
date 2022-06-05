@@ -48,20 +48,60 @@
 
 //  console.log(`SUM ${sum}`);
 
-let numbers = 111234768;
-console.log(`Без превращений`, numbers);
+// let numbers = 111234768;
+// console.log(`Без превращений`, numbers);
 
-numbers = numbers.toString();
-console.log(`toSring`, numbers);
-
-
-let arrPhone = [];
-console.log(`arrPhone`, arrPhone)
+// numbers = numbers.toString();
+// console.log(`toSring`, numbers);
 
 
-function createPhoneNumber(numbers){
-   arrPhone = numbers.split('');
-   console.log(`arrPhone`, arrPhone)
+// let arrPhone = [];
+// console.log(`arrPhone`, arrPhone)
+
+
+// function createPhoneNumber(numbers){
+//    arrPhone = numbers.split('');
+//    console.log(`arrPhone`, arrPhone)
+// }
+
+// console.log(arrPhone);
+
+
+function validBraces(braces){
+   let arr = braces.split('');
+   console.log(`arr`, arr)
+   let x = 0; 
+   let y = 0; 
+   let z = 0;
+   let check = 1;
+   for (let i = 0; i < arr.length; i++){
+    check = check + 1
+    console.log(`check`, check)
+     if(arr[i] === '(' && arr[i + 1] !== '}' && arr[i + 1] !== ']'){
+       x = x + 1;
+     } else if (arr[i] === ')' && arr[i + 1] !== ')'){
+       x = x - 1;
+     } else if (arr[i] ==='[' && arr[i + 1] !== '}' && arr[i + 1] !== ')'){
+       y = y + 1
+     } else if (arr[i] ===']' && arr[i + 1] !== ']'){
+       y = y - 1
+     } else if (arr[i] === '{' && arr[i + 1] !== ')' && arr[i + 1] !== ']'){
+       z = z + 1
+     } else if (arr[i] === '}' && arr[i + 1] !== '}'){
+       z = z - 1
+     } else {
+       return false
+     } 
+   }
+  
+  console.log(`x`, x, `y`, y, `z`, z)
+  
+   if(x === 0 && z === 0 && y === 0){
+     return true
+   } else {
+     return false
+   }
 }
 
-console.log(arrPhone);
+let uncle = validBraces('([{}])');
+console.log(uncle);

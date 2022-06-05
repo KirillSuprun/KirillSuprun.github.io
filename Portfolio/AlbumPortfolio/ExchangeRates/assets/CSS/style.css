@@ -8,3 +8,12 @@ background-size: cover;
 .container{
     min-height: 100vh;
 }
+
+img{
+    border-radius: 50px;
+    box-shadow: 5px 0px 1px rgb(196, 4, 4) !important;
+}
+
+div.card{
+    
+}
