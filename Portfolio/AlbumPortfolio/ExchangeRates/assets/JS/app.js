@@ -57,8 +57,8 @@
                     // infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
                     //     nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus)
                     //             }           
-
-                }))
+                  
+                })),
                 console.log(this.arrRate)
 
                 console.log(this.arrRate[0].nameRus[0])
