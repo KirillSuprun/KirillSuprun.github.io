@@ -11,9 +11,66 @@ background-size: cover;
 
 img{
     border-radius: 50px;
-    box-shadow: 5px 0px 1px rgb(196, 4, 4) !important;
+    box-shadow: 5px 0px 1px rgb(27, 0, 0) !important;
+    max-height: 80px;
 }
 
-div.card{
+img + img  + img  + img{
+    transition-delay: 1s;
+    display: none;
+    transition: 2s;
+}
+
+.card{
+    transition-delay: 1s;
+    height: 335px;
+    transition: 2s;
     
 }
+
+div.card-body{
+    transition-delay: 1s;
+    display: grid;
+    grid-template-columns: 1fr; 
+    transition: 2s;
+}
+
+div.card:hover{
+    transition-delay: 1s;
+    transition: 2s;
+    min-height: 335px;
+    height: auto;
+}
+
+div  p:hover   img {
+    transition-delay: 1s;
+    transition: 2s;
+    display: block;
+}
+
+.imagesA{
+    animation-name: imageShine;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes imageShine{
+    0%{ 
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    50%{
+        border-radius: 25px;
+        background-color: rgb(156, 244, 250);
+    }
+
+    100%{
+        border-radius: 25px;
+        background-color: white;
+    }
+}
+

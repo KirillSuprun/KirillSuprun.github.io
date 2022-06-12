@@ -46,7 +46,7 @@
                 countries[i].currencies = Object.keys(countries[i].currencies).join(''); 
         }
         
-            this.arrCountries = countries
+            this.arrCountries = countries;
 
                 console.log(this.arrCountries);
 
@@ -60,6 +60,8 @@
                   
                 })),
                 console.log(this.arrRate)
+                
+                this.arrRate = this.arrRate.sort((a, b) => a.nameRus - b.nameRus);
 
                 console.log(this.arrRate[0].nameRus[0])
         },
