@@ -10,22 +10,27 @@ background-size: cover;
 }
 
 img{
+    max-width: 100%;
     border-radius: 50px;
     box-shadow: 5px 0px 1px rgb(27, 0, 0) !important;
-    max-height: 80px;
 }
 
-img + img  + img  + img{
+
+img.image3 + img  + img  + img{
     transition-delay: 1s;
     display: none;
     transition: 2s;
 }
 
+
+
 .card{
-    transition-delay: 1s;
-    height: 400px;
-    transition: 2s;
-    
+height: 400px;
+}
+
+.cardFull{
+    min-height: 400px;
+    height: auto;
 }
 
 div.card-body{
@@ -67,30 +72,32 @@ div.card-body{
 
 
 
-div.card:hover{
-    transition-delay: 1s;
-    transition: 2s;
-    min-height: 400px;
-    height: auto;
-}
+        /* div.card:hover{
+            transition-delay: 1s;
+            transition: 2s;
+            min-height: 400px;
+            height: auto;
+        }
 
-i:hover{
-    transform: scale(1.3);
-    transition: 0.5s;
-}
+        i:hover{
+            transform: scale(1.3);
+            transition: 0.5s;
+        }
 
-i{
-    transition: 0.5s;
-}
+        i{
+            transition: 0.5s;
+        }
 
-i:hover + p img  + img{
-    display: block;
-    transition: 5s;
-}
+        i:hover + p img  + img{
+            display: block;
+            transition: 5s;
+        }
 
-div  p:hover   img {
-    transition-delay: 1s;
-    transition: 2s;
-    display: block;
-}
+        div  p:hover   img {
+            transition-delay: 1s;
+            transition: 2s;
+            display: block;
+        } */
+
+
 

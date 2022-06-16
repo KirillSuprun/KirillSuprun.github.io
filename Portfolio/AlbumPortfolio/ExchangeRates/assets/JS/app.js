@@ -1,5 +1,4 @@
-
-    import {createApp, toHandlers} from "../../node_modules/vue/dist/vue.esm-browser.prod.js"
+    import {createApp} from "../../node_modules/vue/dist/vue.esm-browser.prod.js"
     import {URLRates, URLCountries} from "./links.js";
 
 
@@ -11,7 +10,7 @@
                 arrRate: [],
                 arrCountries: [],
                 check: 100,
-                // arrowClicker: true,
+                arrowClicker: true,
             }
         },
 
@@ -54,6 +53,7 @@
                 this.arrRate = rates.map(item => ({
                     ...item,
                     arrowClicker: true,
+                    elementNumber: '',
                     imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
                     nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
                     // infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
@@ -70,12 +70,14 @@
                 
                 this.arrRate = this.arrRate.sort((a, b) => b.sum - a.sum );
 
-                console.log(this.arrRate[0].nameRus[0])
+                console.log(this.arrRate[0].nameRus[0]);
+                console.log(this.arrRate[20].arrowClicker)
         },
 
         methods:{
             showArrow(){
-                this.arrRate.arrowClicker = !this.arrRate.arrowClicker
+                // this.arrRate[elementNumber].arrowClicker = !this.arrRate[elementNumber].arrowClicker;
+                console.log(this.arrRate);
             }
         }
     }
