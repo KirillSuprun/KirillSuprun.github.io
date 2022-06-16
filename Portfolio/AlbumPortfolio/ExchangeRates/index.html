@@ -45,7 +45,7 @@
                     }"> 
                             <div class="card-body bgbg shadow">
                                 <h5 class="card-title fs-2"> {{item.txt}}, {{item.cc}} </h5>
-                                <p class="card-text fs-4"> Курси валют: {{item.rate}} </p>
+                                <p class="card-text fs-4"> Курс валюти: {{item.rate}} грн. </p>
                                 <p  class="card-text text-center fs-4"> Країни, де використовують:  </p>
                                 <div id="" class="p-2">    
                                     <i v-if="item.arrowClicker" @click="item.arrowClicker = !item.arrowClicker" @dblclick="showArrow" class="animate_animated animate__heartBeat imagesA arrowClick fa-solid fa-chevron-down fs-5 mt-1"></i>
@@ -63,7 +63,7 @@
 
                                     </p>
 
-                                    <p v-else="" @click="item.arrowClicker = !item.arrowClicker" class="image6 card-text text-center d-flex justify-content-center row row-cols-3  row-cols-md-3 row-cols-lg-3 m-2">
+                                    <p v-else="" @click="item.arrowClicker = !item.arrowClicker" class=" card-text text-center d-flex justify-content-center row row-cols-3  row-cols-md-3 row-cols-lg-3 m-2">
                                         
                                             <img 
                                                 :title=""
