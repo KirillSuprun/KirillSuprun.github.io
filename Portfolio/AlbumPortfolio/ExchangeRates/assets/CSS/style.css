@@ -40,9 +40,23 @@ div.card-body{
     transition: 2s;
 }
 
+.mainPage{
+    transition: 0.3s;
+}
 
+.mainPage:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
 
+header, nav, footer{
+    border: 1px solid rgba(119, 119, 119, 0.408)
+}
 
+input{
+    width: 10rem;
+    /* height: 2.3rem; */
+}
 
 /* .imagesA{
     animation-name: imageShine;

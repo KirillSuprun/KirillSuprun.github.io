@@ -10,7 +10,7 @@
                 arrRate: [],
                 arrCountries: [],
                 check: 100,
-                arrowClicker: true,
+                search: '',
             }
         },
 
@@ -27,7 +27,6 @@
 
             console.log(`rates`, rates);
 
-            // this.arrRate = rates;
 
             let countries = await fetch(URLCountries);
                 countries = await countries.json();
@@ -70,14 +69,40 @@
                 
                 this.arrRate = this.arrRate.sort((a, b) => b.sum - a.sum );
 
-                console.log(this.arrRate[0].nameRus[0]);
-                console.log(this.arrRate[20].arrowClicker)
         },
 
         methods:{
             showArrow(){
-                // this.arrRate[elementNumber].arrowClicker = !this.arrRate[elementNumber].arrowClicker;
-                console.log(this.arrRate);
+                // console.log(this.arrRate);
+                console.log(this.search);
+                console.log(this.funSearchFilt)
+            },
+
+        },
+
+        computed:{
+            funSearchFilt(){
+                    let sear = this.search.trim().toLowerCase();
+    
+                    let result = this.arrRate.filter(item => {
+                        for(let key in item){
+                            if(item[key].toString().toLowerCase().includes(sear) ){
+                                return true;
+                            }
+                            
+                        }
+    
+                    });
+
+                    console.log(sear);
+
+                    // if(this.sort == 'up'){
+                    //     result.sort((a, b) => a.price - b.price);
+                    // } else if(this.sort == 'down'){
+                    //     result.sort((a, b) => b.price - a.price);
+                    // }
+    
+                    return result
             }
         }
     }

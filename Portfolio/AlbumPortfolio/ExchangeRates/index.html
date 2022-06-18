@@ -31,6 +31,20 @@
             <h1> {{title}} on {{date}} </h1> 
         </header>
 
+        <nav class="bg-white mt-2 py-2 row row-cols-1 row-cols-md-2">
+
+            <div class="search">
+
+               <h3 class="p-2"> Search <input v-model="search" class="mx-2" type="text" placeholder="request"> </h3>
+
+            </div>
+
+
+            <div class="filtres">
+
+            </div>
+
+        </nav>
 
         <main class="text-center mt-2">
             <div class="poisk">  </div>
@@ -84,8 +98,8 @@
 
 
 
-        <footer class="text-center bg-white mt-2">
-
+        <footer class="text-center bg-white py-2 px-2">
+            <a href="../../index_Portfolio_main.html"> <i class="fs-3 mainPage text-black fa-solid fa-house"></i> </a>
         </footer>
     </div>
 
