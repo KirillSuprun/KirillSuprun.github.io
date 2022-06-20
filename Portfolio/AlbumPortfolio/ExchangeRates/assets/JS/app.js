@@ -11,6 +11,7 @@
                 arrCountries: [],
                 check: 100,
                 search: '',
+                sort: '',
             }
         },
 
@@ -96,11 +97,11 @@
 
                     console.log(sear);
 
-                    // if(this.sort == 'up'){
-                    //     result.sort((a, b) => a.price - b.price);
-                    // } else if(this.sort == 'down'){
-                    //     result.sort((a, b) => b.price - a.price);
-                    // }
+                    if(this.sort == 'up'){
+                        result.sort((a, b) => a.cc - b.cc);
+                    } else if(this.sort == 'down'){
+                        result.sort((a, b) => b.cc - a.cc);
+                    }
     
                     return result
             }
