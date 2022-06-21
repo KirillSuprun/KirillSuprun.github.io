@@ -74,9 +74,6 @@
             },
         },
 
-        
-
-        
         components: {
             'card-shop': CardShop,
         }

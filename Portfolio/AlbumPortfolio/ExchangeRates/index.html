@@ -33,7 +33,7 @@
 
         <nav class="bg-white mt-2 py-2 row row-cols-1 row-cols-md-2">
 
-            <div class="search">
+            <div class="searchPoint">
 
                <h3 class="p-2"> Search <input v-model="search" class="mx-2" type="text" placeholder="request"> </h3>
 
@@ -65,7 +65,7 @@
 
             <div class="row row-cols-1 row-cols-md-2 row row-cols-lg-3">
 
-                <div class="p-2" v-for="(item, i) in arrRate" > 
+                <div class="p-2" v-for="(item, i) in funSearchFilt" > 
                     <div id="" class="card text-center bg-white" 
                     :class="{
                         'card': item.arrowClicker,

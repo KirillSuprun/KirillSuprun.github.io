@@ -99,10 +99,10 @@
 
                     if(this.sort == 'up'){
                         result.sort((a, b) => a.cc - b.cc);
-                    } else if(this.sort == 'down'){
+                    } else if(this.sort == 'down'){ 
                         result.sort((a, b) => b.cc - a.cc);
                     }
-    
+    //   2423423423423423423424234324234234324234234234242342342344234234234234234
                     return result
             }
         }
