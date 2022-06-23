@@ -28,7 +28,7 @@
     <div id="app" class="container text-center">
 
         <header class="text-center p-2 bg-white">
-            <h1> {{title}} on {{date}} </h1> 
+            <h1> Exchange Rates on <span v-cloak> {{date}}  </span> </h1> 
         </header>
 
         <nav class="bg-white mt-2 py-2 text-center" >
@@ -42,8 +42,18 @@
         </nav>
 
         <main class="text-center mt-2">
+
+            <div v-if="!arrRate.length" id="spinner" class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+
+            <!-- <div v-if="!funSearchFilt.length" id="spinner" class="spinner-grow text-dark" role="status"> 
+                <span class="visually-hidden">Loading...</span>
+              </div> -->
+<!-- " -->
+
 <!--  Сделать Спиннер или лоадер, пока грузятся данные.  -->
-            <div class="row row-cols-1 row-cols-md-2 row row-cols-lg-3">
+            <div v-cloak class="row row-cols-1 row-cols-md-2 row row-cols-lg-3">
 
                 <div class="p-2" v-for="(item, i) in funSearchFilt" > 
                     <div id="" class="card text-center bg-white" 
@@ -82,7 +92,7 @@
                                                      
                                     </p>
                                 </div> 
-                             </div>
+                            </div>
                     </div>        
                 </div>
 

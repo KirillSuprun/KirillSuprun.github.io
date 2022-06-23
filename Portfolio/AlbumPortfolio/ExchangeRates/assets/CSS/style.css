@@ -57,68 +57,20 @@ div.card-body{
 }
 
 header, nav{
-    border: 1px solid rgba(119, 119, 119, 0.408)
+    border: 1px solid rgba(119, 119, 119, 0.408);
 }
 
 input{
     width: 10rem;
-    /* height: 2.3rem; */
 }
 
-/* .imagesA{
-    animation-name: imageShine;
-    animation-duration: 10s;
-    animation-delay: 10s !important;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-} */
-/*
-@keyframes imageShine{
-    0%{ 
-        border-radius: 15px;
-        background-color: white;
-    }
+[v-cloak]{
+    display: none;
+}
 
-    50%{
-        border-radius: 15px;
-        background-color: rgba(44, 217, 230, 0.685);
-    }
-
-    100%{
-        border-radius: 15px;
-        background-color: white;
-    }
-} */
-
-
-
-        /* div.card:hover{
-            transition-delay: 1s;
-            transition: 2s;
-            min-height: 400px;
-            height: auto;
-        }
-
-        i:hover{
-            transform: scale(1.3);
-            transition: 0.5s;
-        }
-
-        i{
-            transition: 0.5s;
-        }
-
-        i:hover + p img  + img{
-            display: block;
-            transition: 5s;
-        }
-
-        div  p:hover   img {
-            transition-delay: 1s;
-            transition: 2s;
-            display: block;
-        } */
-
-
-
+#spinner{
+    margin-top: 20vh;
+    width: 15rem;
+    height: 15rem;
+    font-size: 900;
+}
