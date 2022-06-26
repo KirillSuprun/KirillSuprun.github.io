@@ -43,8 +43,15 @@
 
         <main class="text-center mt-2">
 
+           
+
             <div v-if="!arrRate.length" id="spinner" class="spinner-border text-info" role="status">
                 <span class="visually-hidden">Loading...</span>
+              </div>
+
+              <div class="position-absolute top-50 start-50 translate-middle" id="notFound" v-if="!funSearchFilt.length">
+                <h2> Not found </h2> 
+                <h2> Check your request  </h2>
               </div>
 
             <!-- <div v-if="!funSearchFilt.length" id="spinner" class="spinner-grow text-dark" role="status"> 

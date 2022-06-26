@@ -74,3 +74,7 @@ input{
     height: 15rem;
     font-size: 900;
 }
+
+main   div + #notFound{
+    display: none;
+}
