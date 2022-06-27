@@ -76,10 +76,11 @@
                                     <p v-if="item.arrowClicker" @click="item.arrowClicker = !item.arrowClicker" class="image3 card-text text-center d-flex justify-content-center row row-cols-3  row-cols-md-3 row-cols-lg-3 m-2">
 
                                         <img 
-                                                :title=""
-                                                v-for="item in item.imageFlag"
-                                                :src="item"
-                                                :alt="" 
+                                                
+                                                v-for="item in item.countryResult"
+                                                :title="item.title"
+                                                :src="item.url"
+                                                :alt="item.title" 
                                                 class="image3 p-1 shadow">
 
                                     </p>
@@ -87,10 +88,10 @@
                                     <p v-else="" @click="item.arrowClicker = !item.arrowClicker" class=" card-text text-center d-flex justify-content-center row row-cols-3  row-cols-md-3 row-cols-lg-3 m-2">
                                         
                                             <img 
-                                                :title=""
-                                                v-for="item in item.imageFlag"
-                                                :src="item"
-                                                :alt="" 
+                                                v-for="item in item.countryResult"
+                                                :title="item.title"
+                                                :src="item.url"
+                                                :alt="item.title" 
                                                 class="p-1 shadow">
                                                      
                                     </p>
@@ -100,7 +101,7 @@
                 </div>
 
             </div>
-
+            <!-- Main Data  -->
         </main>
 
 

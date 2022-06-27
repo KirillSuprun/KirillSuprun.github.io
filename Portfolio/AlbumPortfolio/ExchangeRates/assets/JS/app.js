@@ -1,4 +1,4 @@
-    import {createApp} from "../../node_modules/vue/dist/vue.esm-browser.prod.js"
+    import {createApp, toHandlers} from "../../node_modules/vue/dist/vue.esm-browser.prod.js"
     import {URLRates, URLCountries} from "./links.js";
 
 
@@ -54,22 +54,34 @@
                     ...item,
                     arrowClicker: true,
                     elementNumber: '',
-                    imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
-                    nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
-                    // infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
-                    //     nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus)
-                    //             }           
-                })),
+                    // imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
+                    // nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
+                    infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
+                                  nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus)
+                                },
+                    countryResult: [],          
+                }))
+
+                for(let i = 0; i < this.arrRate.length; i++){
+                    let result = [];
+                    for (let j = 0; j < this.arrRate[i].infoCountry.imageFlag.length; j++){
+                        let combo = {url: this.arrRate[i].infoCountry.imageFlag[j], title:this.arrRate[i].infoCountry.nameRus[j]};
+                        // console.log(combo);
+                        result.push(combo);
+                        // console.log(result);
+                    }
+                    this.arrRate[i].countryResult = result;
+                }
+
 
                 this.arrRate = this.arrRate.map(item => ({
                     ...item,
-                    sum: item.nameRus.length
+                    sum: item.infoCountry.nameRus.length
                 }))
 
-                console.log(this.arrRate)
+                console.log(`arrRate`, this.arrRate)
                 
                 this.arrRate = this.arrRate.sort((a, b) => b.sum - a.sum );
-
         },
 
         methods:{
