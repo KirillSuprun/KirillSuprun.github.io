@@ -6,10 +6,8 @@
         data(){
             return {
                 title: 'Exchange Rates',
-                date: '',
                 arrRate: [],
                 arrCountries: [],
-                check: 100,
                 search: '',
                 sort: '',
             }
@@ -35,6 +33,7 @@
 
                 countries = countries.map(item => ({
                 nameRus: item.translations.rus.common,
+                nameCom: item.name.common,
                 imageFlag: item.flags.png,
                 currencies: item.currencies,
         })) 
@@ -53,11 +52,10 @@
                 this.arrRate = rates.map(item => ({
                     ...item,
                     arrowClicker: true,
-                    elementNumber: '',
-                    // imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
-                    // nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
+                    nameCCour: countries.currencies,
                     infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
-                                  nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus)
+                                  nameCom: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameCom),
+                                  nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
                                 },
                     countryResult: [],          
                 }))
@@ -65,10 +63,8 @@
                 for(let i = 0; i < this.arrRate.length; i++){
                     let result = [];
                     for (let j = 0; j < this.arrRate[i].infoCountry.imageFlag.length; j++){
-                        let combo = {url: this.arrRate[i].infoCountry.imageFlag[j], title:this.arrRate[i].infoCountry.nameRus[j]};
-                        // console.log(combo);
+                        let combo = {url: this.arrRate[i].infoCountry.imageFlag[j], title: this.arrRate[i].infoCountry.nameCom[j] + ', ' + this.arrRate[i].infoCountry.nameRus[j]};
                         result.push(combo);
-                        // console.log(result);
                     }
                     this.arrRate[i].countryResult = result;
                 }
@@ -76,11 +72,12 @@
 
                 this.arrRate = this.arrRate.map(item => ({
                     ...item,
-                    sum: item.infoCountry.nameRus.length
+                    sum: item.infoCountry.nameCom.length
                 }))
 
                 console.log(`arrRate`, this.arrRate)
-                
+                console.log(`arrContr`, this.arrCountries)
+                console.log(`countr`, countries)
                 this.arrRate = this.arrRate.sort((a, b) => b.sum - a.sum );
         },
 
