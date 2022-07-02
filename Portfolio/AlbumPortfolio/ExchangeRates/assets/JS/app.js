@@ -52,7 +52,6 @@
                 this.arrRate = rates.map(item => ({
                     ...item,
                     arrowClicker: true,
-                    nameCCour: countries.currencies,
                     infoCountry: {imageFlag: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.imageFlag),
                                   nameCom: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameCom),
                                   nameRus: this.arrCountries.filter(i => i.currencies.includes(item.cc)).map(j => j.nameRus),
