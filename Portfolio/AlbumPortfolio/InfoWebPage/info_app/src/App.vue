@@ -8,7 +8,7 @@
 
         <div class="header_meenu menu" >
             <div class="menu_icon">  
-                <span> Menu Icon here </span>
+                <span>  </span>
             </div>
 
             <nav class="menu_body">    
@@ -41,13 +41,13 @@
     
     <div class="full_screen">
       <div class="full_screen_body">
-        <div class="full_screen_title"> News today  </div>
-        <div class="full_screen_text"> News, weather, exchange rates and share price of companies for today    </div>
+        <div class="full_screen_title animate__animated animate__zoomIn"> News today  </div>
+        <div class="full_screen_text animate__animated animate__zoomIn"> News, weather, exchange rates and share price of companies for today    </div>
       </div>
         
        
         <video loop autoplay muted preload="auto" class="full_screen_video" width="">
-          <source type="video/mp4" src="https://cdn.pixabay.com/vimeo/724719607/Stars%20-%20121747.mp4?width=1280&expiry=1657210103&hash=42514cce60b2baf8d118f324d2bd832443f545bb">
+          <source type="video/mp4" src="./assets/StarsVideo.mp4">
         </video>
     </div>
 
@@ -70,6 +70,7 @@
 
 <script>
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/animate.css/animate.css';
 import TopHeader from './components/TopHeader.vue';
 import ExchangeRates from './components/ExchangeRates.vue';
 import WeatherToday from './components/WeatherToday.vue';
@@ -133,7 +134,7 @@ div.allTh{
 
 .menu_list > li {
   position: relative;
-  margin: 0px 0px 0px 20px;
+  margin: 10px 0px 0px 20px;
 }
 
 ul.menu_list{
@@ -150,13 +151,13 @@ a.menu_link {
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
   }
 
   a.menu_link:hover{
     color: #fff;
     text-decoration: underline;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   .menu_list{
@@ -172,6 +173,7 @@ a.menu_link {
   }
 
   .full_screen_body{
+    background-color: rgba(37, 37, 37, 0.425);
     position: relative;
     z-index: 2;
     display: flex;
@@ -193,14 +195,16 @@ a.menu_link {
   }
 
   .full_screen_title{
+    font-family: 'Oxygen', sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
     color: white;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);;
     text-transform: uppercase;
   }
 
   .full_screen_text{
+    font-family: 'Oxygen', sans-serif;
     font-size: 2rem;
     color: white;
     text-align: center;
@@ -219,8 +223,16 @@ a.menu_link {
   }
 
   a.menu_link {
-  color: rgb(201, 201, 201);
+    color: rgb(201, 201, 201);
+    transition: 0.5s;
   }
+
+  a.menu_link:hover{
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  
 
   .full_screen_body{
     background-color: rgba(37, 37, 37, 0.425);
@@ -237,14 +249,14 @@ a.menu_link {
   .full_screen_title{
     font-size: 4.5rem;
     font-weight: 600;
-    color: white;
-    text-shadow: 0px 0px 5px white;
+    color: rgba(255, 255, 255, 0.774);
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
     text-transform: uppercase;
   }
 
   .full_screen_text{
     font-size: 3rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     text-align: center;
     padding-top: 15px;
   }
