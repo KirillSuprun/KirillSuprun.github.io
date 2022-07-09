@@ -54,6 +54,9 @@
   
     <main class="container">  
 
+      <news-block class=" newsBlock"  />
+
+
       <top-header class="bg-warning topHeader" />
     
       <exchange-rates class="bg-success" />
@@ -74,6 +77,7 @@ import '../node_modules/animate.css/animate.css';
 import TopHeader from './components/TopHeader.vue';
 import ExchangeRates from './components/ExchangeRates.vue';
 import WeatherToday from './components/WeatherToday.vue';
+import NewsBlock from './components/NewsBlock.vue';
 
 
 export default {
@@ -83,7 +87,7 @@ export default {
     }
   },
   components: {
-    TopHeader, ExchangeRates, WeatherToday, 
+    TopHeader, ExchangeRates, WeatherToday, NewsBlock,
   },
 
 
@@ -210,8 +214,14 @@ a.menu_link {
     text-align: center;
     padding-top: 15px;
   }
+/*  Main css */
 
+.newsBlock{
+  margin-top: 1rem;
+  max-width: 100%;
+}
 
+/* Media request */
 @media (min-width: 767px){
   .menu_list{
     display: flex;
