@@ -88,7 +88,7 @@ export default {
         flex-direction: column-reverse;
         padding: 1rem 1rem;
         text-align: center;
-        min-width: 75%;
+        width: 100%;
     }
 
     .news_space{
@@ -99,14 +99,18 @@ export default {
     /* Media */
     @media (min-width: 767px){
         .news_image{
-        min-width: 15rem;
+        min-width: 25%;
     }
 
-        .news_body{
+    .news_text{
+        min-width: 75%
+    }
+
+    .news_body{
         display: flex;
         flex-direction: row;
         padding: 1rem 1rem;
-        min-width: 75%;
+        width: 100%;
         }
     }
 
