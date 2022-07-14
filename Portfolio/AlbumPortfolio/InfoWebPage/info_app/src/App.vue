@@ -6,7 +6,7 @@
 
         <a href="" class="header_logo">      </a>
 
-        <div class="header_meenu menu" >
+        <div class="header_menu menu" >
             <div class="menu_icon">  
                 <span>  </span>
             </div>
@@ -64,7 +64,7 @@
       <weather-today class="bg-info" />
 
     </main>
-    <footer> </footer> 
+    <footer > <span class="html_characters"> &#169;&#160;</span>Coperight 2022 </footer> 
 </div> 
 
 </template>
@@ -220,6 +220,30 @@ a.menu_link {
   margin-top: 1rem;
   max-width: 100%;
 }
+
+/* NewsBlocl */
+
+footer{
+  font-family: 'Oxygen', sans-serif;
+  display: flex;
+  top: 0;
+  left: 0;
+  background: rgb(21, 10, 43);
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bolder;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.html_characters{
+  font-size: 1.5rem;
+
+}
+
+/* Footer */
 
 /* Media request */
 @media (min-width: 767px){

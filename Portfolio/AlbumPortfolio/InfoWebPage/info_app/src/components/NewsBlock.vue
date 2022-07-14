@@ -1,27 +1,36 @@
 <template>
   <div>
-    <h1 class="text-center"> NEWS </h1>
+    <p class="text-center mt-3 news_news"> NEWS </p>
 
-    <div class="news_body" :key="item.element" v-for="item in this.arrNews"
-    
-    >   <div class="news_space">
-            <div class="news_text">
-                <h4> {{item.title}} </h4>
-                
-                <p> {{item.description}}  </p>
-                <p> {{item.author}}  </p>
-                <p>  <a :href="item.url"> <h4> Watch more </h4> </a>   </p>
+    <div class="news_theme text-center" :key="item.elementNumber" v-for="item in this.arrNews"> 
+        
+
+        <h3 class="news_title"> {{item.title}} </h3>
+
+        <div class="news_body"> 
+            <div class="news_space">
+
+                <div class="news_text d-flex justify-content-center align-items-center ps-5 pe-5 h-100 w-100">
+                    
+                    <p class="text_description"> {{item.description}}  </p>
+                    
+                </div>
             </div>
-        </div>
 
-        <div class="news_space">
-            <div class="news_image">
-                <img class="news_photo" :src='item.image'  
-                    alt=""
+            <div class="news_space">
+                <div class="news_image">
+                    <span class=""></span>
+
+                    <img class="news_photo" :src='item.image'  
+                        alt=""
                     >
 
+                </div>
             </div>
         </div>
+        <p class="fw-bold"> writer: {{item.author}}  </p>
+        <a class="news_watch_link mb-3" :href="item.url"> <h5> Read more </h5> </a>
+        <hr class="my-3">
     </div>
 
 
@@ -79,39 +88,52 @@ export default {
         width: 15rem;
     }
 
-    .news_image{
-        min-width: 15rem;
-    }
-
     .news_body{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 1rem 1rem;
         text-align: center;
         width: 100%;
+    }
+
+    .news_theme{
+        width: 100%;
+        margin-top: 4rem;
     }
 
     .news_space{
         padding: 1rem;
     }
 
+    .news_watch_link{
+        color: rgb(145, 104, 226);
+        text-decoration: none;
+    }
 
+    .news_watch_link:hover{
+        text-decoration: underline;
+        color: rgb(57, 7, 156);
+    }
+
+    .news_title{
+        color: rgb(0, 112, 163);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .news_news{
+        font-weight: 600;
+        font-size: 3rem;
+    }
+   
     /* Media */
     @media (min-width: 767px){
-        .news_image{
-        min-width: 25%;
-    }
 
-    .news_text{
-        min-width: 75%
-    }
-
-    .news_body{
-        display: flex;
-        flex-direction: row;
-        padding: 1rem 1rem;
-        width: 100%;
+        .news_title{
+        color: rgb(0, 112, 163);
+        text-shadow: 1px 1px 1px black;
+        font-size: 2rem;
         }
+
     }
 
 </style>
