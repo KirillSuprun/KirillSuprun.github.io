@@ -41,8 +41,8 @@
     
     <div class="full_screen">
       <div class="full_screen_body">
-        <div class="full_screen_title animate__animated animate__zoomIn"> News today  </div>
-        <div class="full_screen_text animate__animated animate__zoomIn"> News, weather, exchange rates and share price of companies for today    </div>
+        <div class="full_screen_title animate__animated animate__zoomIn animate__slow"> News today  </div>
+        <div class="full_screen_text animate__animated animate__zoomIn animate__slow"> News, weather, exchange rates and share price of companies for today    </div>
       </div>
         
        
