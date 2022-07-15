@@ -53,15 +53,19 @@
 
   
     <main class="container">  
+      <div class="news_grid">
+        <news-block class="newsBlock"  />
+      </div>
+      
+      <div>  
+        <weather-today class="" />
 
-      <news-block class=" newsBlock"  />
+        <top-header class="bg-warning topHeader" />
+      
+        <exchange-rates class="bg-success" />
 
-
-      <top-header class="bg-warning topHeader" />
-    
-      <exchange-rates class="bg-success" />
-
-      <weather-today class="bg-info" />
+        
+      </div>
 
     </main>
     <footer > <span class="html_characters"> &#169;&#160;</span>Coperight 2022 </footer> 
@@ -216,12 +220,26 @@ a.menu_link {
   }
 /*  Main css */
 
-.newsBlock{
-  margin-top: 1rem;
-  max-width: 100%;
+
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem
 }
 
-/* NewsBlocl */
+.news_grid{
+  border-bottom: 1px solid rgb(199, 198, 198);
+  margin-top: 2rem;
+}
+
+
+
+/* Main Theme */
+
+
+/* NewsBlock */
 
 footer{
   font-family: 'Oxygen', sans-serif;
@@ -294,6 +312,18 @@ footer{
     text-align: center;
     padding-top: 15px;
   }
+
+  main{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  }
+
+  .news_grid{
+  border-right: 1px solid rgb(199, 198, 198);
+  
+}
 
 }
 

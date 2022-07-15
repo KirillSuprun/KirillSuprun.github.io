@@ -1,8 +1,6 @@
 //  Place for export Links
 
-
-// let newsURL =  'http://api.mediastack.com/v1/news?access_key=433aa9b7a2bff48dfaebea161d3df589&countries=gb,us&languages=en&date=today&categories=general,business,entertainment,health,science,technology'
-
+// NEWS
 let newsURL =  'http://api.mediastack.com/v1/news?access_key=433aa9b7a2bff48dfaebea161d3df589&countries=gb,us&languages=en&date=today&categories=business,entertainment,health,science,technology'
 
 // optional parameters: 
@@ -15,14 +13,18 @@ let newsURL =  'http://api.mediastack.com/v1/news?access_key=433aa9b7a2bff48dfae
     // & offset = 0
     // & limit = 100'
 
+// NEWS
+
+// Weather
+
+let weatherURL = 'http://api.weatherstack.com/current?access_key=179d1b93840937784406889b230efbc5&query=fetch:ip&units=m'
+
+
+// Weather 
 
 
 
 
 
 
-
-
-
-
-    export {newsURL}; 
+    export {newsURL, weatherURL}; 

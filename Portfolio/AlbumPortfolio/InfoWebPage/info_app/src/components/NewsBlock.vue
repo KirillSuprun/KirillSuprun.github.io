@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p class="text-center mt-3 news_news"> NEWS </p>
+    <p class="text-center news_news"> NEWS </p>
 
-    <div class="news_theme text-center" :key="item.elementNumber" v-for="item in this.arrNews"> 
+    <div class="news_theme text-center" v-for="item in this.arrNews" :id="'news' + item.elementNumber" :key="item.elementNumber" > 
         
 
-        <h3 class="news_title"> {{item.title}} </h3>
+        <h3 class="px-4 news_title"> {{item.title}} </h3>
 
         <div class="news_body"> 
             <div class="news_space">
@@ -28,9 +28,9 @@
                 </div>
             </div>
         </div>
-        <p class="fw-bold"> writer: {{item.author}}  </p>
+        <p class="fw-bold"> Writer: {{item.author}}  </p>
         <a class="news_watch_link mb-3" :href="item.url"> <h5> Read more </h5> </a>
-        <hr class="my-3">
+        <hr class="">
     </div>
 
 
@@ -56,7 +56,7 @@ export default {
     let newsStart = await fetch(newsURL);
         newsStart = await newsStart.json(); 
 
-    console.log(`news`, typeof newsStart, newsStart);
+    // console.log(`news`, typeof newsStart, newsStart);
 
     newsStart = newsStart.data
     
@@ -74,7 +74,7 @@ export default {
 
     this.arrNews = newsStart;
 
-    console.log(`arrNews`, this.arrNews);
+    // console.log(`arrNews`, typeof this.arrNews, this.arrNews);
 
   }
 
@@ -98,7 +98,7 @@ export default {
 
     .news_theme{
         width: 100%;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .news_space{
@@ -123,6 +123,14 @@ export default {
     .news_news{
         font-weight: 600;
         font-size: 3rem;
+    }
+
+    #news24   hr{
+        display: none;
+    }
+
+    hr{
+        margin-top: 2rem !important;
     }
    
     /* Media */
