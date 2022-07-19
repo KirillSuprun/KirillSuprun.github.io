@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <p class="text-center news_news"> NEWS </p>
 
     <div class="news_theme text-center" v-for="item in this.arrNews" :id="'news' + item.elementNumber" :key="item.elementNumber" > 
@@ -32,8 +32,6 @@
         <a class="news_watch_link mb-3" :href="item.url"> <h5> Read more </h5> </a>
         <hr class="">
     </div>
-
-
   </div>
 </template>
 

@@ -60,7 +60,7 @@
       <div>  
         <weather-today class="" />
 
-        <top-header class="bg-warning topHeader" />
+        <share-price class="bg-warning topHeader" />
       
         <exchange-rates class="bg-success" />
 
@@ -78,7 +78,7 @@
 <script>
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/animate.css/animate.css';
-import TopHeader from './components/TopHeader.vue';
+import SharePrice from './components/SharePrice.vue';
 import ExchangeRates from './components/ExchangeRates.vue';
 import WeatherToday from './components/WeatherToday.vue';
 import NewsBlock from './components/NewsBlock.vue';
@@ -91,7 +91,7 @@ export default {
     }
   },
   components: {
-    TopHeader, ExchangeRates, WeatherToday, NewsBlock,
+    SharePrice, ExchangeRates, WeatherToday, NewsBlock,
   },
 
 
@@ -296,6 +296,7 @@ footer{
     align-items: center;
     flex-direction: column;
     padding: 15%;
+    width: 100%;
   }
 
   .full_screen_title{
