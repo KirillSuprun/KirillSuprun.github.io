@@ -23,7 +23,7 @@
 <!--  -->
 
 <script>
-  import {weatherURL} from '@/links'
+  // import {weatherURL} from '@/links'
 
 
   export default {
