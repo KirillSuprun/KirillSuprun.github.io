@@ -64,7 +64,6 @@
       
         <exchange-rates class="bg-success" />
 
-        
       </div>
 
     </main>

@@ -8,7 +8,7 @@
 <!--  -->
 
     <div class="weather_time text-center">
-        <h5> {{timeNow}}  </h5>
+        <h5> {{hours}}:{{minutes}}:{{seconds}} </h5>
         <h5> {{dateNow}}  </h5>
     </div>
 
@@ -35,7 +35,9 @@
          location_region: '',
          location_country: '',
          dateNow: '',
-         timeNow: '',
+         hours: 0,
+         minutes: 0,
+         seconds: 0
       }
     },
 
@@ -60,24 +62,8 @@
         console.log(`this.dateNow`, this.dateNow);
 // time 
         
-        function refreshTime (){
-          let timeRightNow = ''
-          let today = new Date();
-          let todayHours = today.getHours();
-          let todayMinutes = today.getMinutes()
-          let todaySecond = today.getSeconds()
+        setInterval(() => this.setTime(), 1000);
 
-          console.log(todayHours, todayMinutes, todaySecond)
-
-          timeRightNow = todayHours + ':' + (todayMinutes >= 10 ? todayMinutes : '0' + todayMinutes) + ':' + (todaySecond >= 10 ? todaySecond : '0' + todaySecond) ;
-          return timeRightNow
-        }
-
-        setInterval(function () {
-          refreshTime();
-        }, 1000);
-        
-        this.timeNow = refreshTime()
     },
 
     computed: {
@@ -85,9 +71,19 @@
     },
 
     methods: {
-      refreshTime() {
-        
-      }
+      setTime() {
+      const date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+      hours = hours <= 9 ? `${hours}`.padStart(2, 0) : hours;
+      minutes = minutes <= 9 ? `${minutes}`.padStart(2, 0) : minutes;
+      seconds = seconds <= 9 ? `${seconds}`.padStart(2, 0) : seconds;
+      this.hours = hours;
+      this.minutes = minutes;
+      this.seconds = seconds;
+      },
+
     },  
   }
 </script>
