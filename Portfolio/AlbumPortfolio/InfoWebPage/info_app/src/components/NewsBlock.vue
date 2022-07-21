@@ -30,7 +30,7 @@
         </div>
         <p class="fw-bold"> Writer: {{item.author}}  </p>
         <a class="news_watch_link mb-3" :href="item.url"> <h5> Read more </h5> </a>
-        <hr class="">
+        <hr class="News_hr">
     </div>
   </div>
 </template>
@@ -123,11 +123,11 @@ export default {
         font-size: 3rem;
     }
 
-    #news24   hr{
+    #news24   hr.News_hr{
         display: none;
     }
 
-    hr{
+    hr.News_hr{
         margin-top: 2rem !important;
     }
    

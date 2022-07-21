@@ -17,7 +17,7 @@
 
 // Weather
 
-// let weatherURL = 'http://api.weatherstack.com/current?access_key=179d1b93840937784406889b230efbc5&query=fetch:ip&units=m'
+ let weatherURL = 'http://api.weatherstack.com/current?access_key=50503b0fda8f68c90740353745b5b35e&query=fetch:ip&units=m'
 
 // Weather 
 
@@ -26,4 +26,4 @@
 
 
 
-    // export {newsURL, weatherURL}; 
+ export {/*newsURL,*/ weatherURL}; 

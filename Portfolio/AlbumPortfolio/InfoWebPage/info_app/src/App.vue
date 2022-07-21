@@ -215,7 +215,7 @@ a.menu_link {
     font-size: 2rem;
     color: white;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 10px;
   }
 /*  Main css */
 
@@ -322,8 +322,7 @@ footer{
 
   .news_grid{
   border-right: 1px solid rgb(199, 198, 198);
-  
-}
+  }
 
 }
 
