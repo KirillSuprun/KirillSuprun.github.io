@@ -3,7 +3,7 @@
 
 
     <div class="weather_location text-center pt-4 p-2"> 
-        <h5> {{location_name}} {{location_region}} {{location_country}}   </h5>
+        <span class="location"> {{location_name}} {{location_region}} {{location_country}} fsfd  </span>
     </div>
     <hr>
 <!--  -->
@@ -14,23 +14,22 @@
     <hr>
 <!--  -->
     <div class="weather_data text-center pb-4">
-      <div class="weather_image text_center"> 
+      <div class="weather_image text_center mb-3"> 
           <img class="weather_image_now" :src='weatherImage' alt="weather now">
           <h5> {{(weatherInfo.weather_descriptions)}} </h5>
       </div>
-      <hr>
+      <!-- <hr> -->
               <!--  -->
-      <div class="weather_info p-3">
+      <div class="weather_info text-center p-3">
 
-        <div class="temperature border_right"> <h5> Temperature </h5> {{ weatherInfo.temperature }}℃ </div>
+        <div class="temperature border_right text-center"> <span class="down_name"> Temperature </span> <p> {{ weatherInfo.temperature }}℃ </p> </div>
 
-        <div class="feelsLike border_right"> <h5> Feelslike</h5> {{ weatherInfo.feelslike }}℃ </div>
+        <div class="feelsLike ms-1 border_right text-center"> <span class="down_name"> Feelslike</span> <p> {{ weatherInfo.feelslike }}℃ </p> </div>
 
-        <div class="wind_speed "> <h5> Wind speed</h5> {{ weatherInfo.wind_speed }}km/h  </div>
+        <div class="wind_speed ms-1 text-center "> <span class="down_name"> Wind speed</span> <p> {{ weatherInfo.wind_speed }}km/h </p> </div>
 
       </div>
     </div>
-
 
   </div>
 </template>
@@ -127,10 +126,26 @@
 
 <style scoped>
 
+  hr{
+    padding: 0.15rem;
+    border-radius: 30px;
+    background-image: linear-gradient(to right top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+  }
+
+  .location{
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 25px;
+  }
+
+
+
   div.weather_box{
     height: 500px;
     background: rgba(150,181,229,255);
     border-radius: 50px;
+    /* border: 2px solid rgba(160, 10, 247, 0.425); */
+    box-shadow: 0px 0px 20px rgb(94, 164, 230);
   }
 
   .weather_image_now{
@@ -140,27 +155,56 @@
   div.weather_info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
+
+  .down_name{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* .border_right{
+      border-right: 1px solid gray;
+      padding-right: 3%;
+    } */
 
   hr{
     margin: 0 3rem;
   }
 
-  @media (min-width: 767px){
+  @media (min-width: 998px){
     div.weather_info{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
     }
 
     .border_right{
-      border-right: 1px solid gray;
+      border-right: none;
     }
 
     div.weather_box{
-    height: 500px;
+    height: 600px;
     }
+
+    .location{
+      font-size: 1.3rem;
+      font-weight: 500;
+      border-radius: 25px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    div.weather_info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    /* .border_right{
+      border-right: 1px solid gray;
+      padding-right: 3%;
+    } */
   }
 
 

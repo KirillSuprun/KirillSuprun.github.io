@@ -29,7 +29,6 @@
                     <a href="" class="menu_link"> Company shares </a>
                   </li>
 
-
                 </ul>
             </nav>
         
@@ -41,8 +40,8 @@
     
     <div class="full_screen">
       <div class="full_screen_body">
-        <div class="full_screen_title animate__animated animate__zoomIn animate__slow"> News today  </div>
-        <div class="full_screen_text animate__animated animate__zoomIn animate__slow"> News, weather, exchange rates and share price of companies for today    </div>
+        <div class="full_screen_title animate__animated animate__zoomIn animate__slow"> News today </div>
+        <div class="full_screen_text animate__animated animate__zoomIn animate__slow"> News, weather, exchange rates and share price of companies for today </div>
       </div>
         
        
@@ -263,7 +262,7 @@ footer{
 /* Footer */
 
 /* Media request */
-@media (min-width: 767px){
+@media (min-width: 998px){
   .menu_list{
     display: flex;
     align-items: center;
