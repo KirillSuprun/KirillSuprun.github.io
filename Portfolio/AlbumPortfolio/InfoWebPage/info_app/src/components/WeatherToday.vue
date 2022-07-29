@@ -18,7 +18,7 @@
           <img class="weather_image_now" :src='weatherImage' alt="weather now">
           <h5> {{(weatherInfo.weather_descriptions)}} </h5>
       </div>
-      <!-- <hr> -->
+     <hr> 
               <!--  -->
       <div class="weather_info text-center p-3">
 

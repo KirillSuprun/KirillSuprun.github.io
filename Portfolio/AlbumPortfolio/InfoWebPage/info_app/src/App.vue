@@ -1,4 +1,4 @@
-<template>
+<template id="app">
   <div class="">  
     
     <header class="header">
@@ -45,9 +45,9 @@
       </div>
         
        
-        <video loop autoplay muted preload="auto" class="full_screen_video" width="">
-          <source type="video/mp4" src="./assets/StarsVideo.mp4">
-        </video>
+         <video loop autoplay muted preload="auto" class="full_screen_video" width="">
+           <source type="video/mp4" src="./assets/StarsVideo.mp4">
+         </video>
     </div>
 
   
@@ -57,7 +57,7 @@
       </div>
       
       <div>  
-        <weather-today class="" />
+         <weather-today class="" /> 
 
         <share-price class="bg-warning topHeader" />
       
