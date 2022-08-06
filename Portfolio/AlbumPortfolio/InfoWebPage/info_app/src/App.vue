@@ -29,6 +29,10 @@
                     <a href="" class="menu_link"> Company shares </a>
                   </li>
 
+                  <li>
+                    <a href="../../../../index_Portfolio_main.html" class="menu_link"> Main page </a>
+                  </li>
+
                 </ul>
             </nav>
         
