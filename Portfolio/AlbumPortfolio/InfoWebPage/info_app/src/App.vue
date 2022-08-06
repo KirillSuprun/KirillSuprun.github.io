@@ -4,7 +4,7 @@
     <header class="header">
       <div class="header_container">  
 
-        <a href="" class="header_logo">      </a>
+        <a href="" class="header_logo"> <img class="logo_logo" src="./assets/horizontal_on_white_by_logaster.png" alt=""> </a>
 
         <div class="header_menu menu" >
             <div class="menu_icon">  
@@ -126,12 +126,16 @@ header{
 }
 
 .header_logo{
-  border-radius: 50%;
-  background: white;
+  z-index: 5;
+  height: 40px;
+}
+
+.logo_logo{
+  max-height: 120%;
+  border-radius: 20px;
+  margin: -5px;
   position: relative;
   z-index: 5;
-  width: 40px;
-  height: 40px;
 }
 
 div.allTh{

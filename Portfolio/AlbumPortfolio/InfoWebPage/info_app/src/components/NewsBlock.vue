@@ -50,11 +50,13 @@ export default {
     }
   },
 
-  async mounted(){
+  async mounted(){ 
+
     let newsStart = await fetch(newsURL);
         newsStart = await newsStart.json(); 
 
-    // console.log(`news`, typeof newsStart, newsStart);
+
+    console.log(`newsStart`, newsStart)
 
     newsStart = newsStart.data
     
@@ -71,12 +73,7 @@ export default {
     }));
 
     this.arrNews = newsStart;
-
-    // console.log(`arrNews`, typeof this.arrNews, this.arrNews);
-
   }
-
-
 }
 </script>
 
@@ -121,6 +118,11 @@ export default {
     .news_news{
         font-weight: 600;
         font-size: 3rem;
+    }
+
+    .text_description{
+        max-width: 100%;
+        word-wrap: break-word;
     }
 
     #news24   hr.News_hr{
