@@ -1,6 +1,8 @@
 
     const URL = "./data.json";
 
+    console.log(URL)
+
     let data = await fetch(URL);
         data = await data.json();
 
